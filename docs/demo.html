@@ -1,0 +1,1117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>repo-replay demo</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<meta name="description" content="Animated replay of a git repository's history, made with repo-replay.">
+<style>:root {
+  --ink: #0a1118;
+  --ink-raised: rgba(16, 27, 37, 0.86);
+  --line: rgba(170, 200, 225, 0.14);
+  --text: #dde7f0;
+  --muted: #8a9bab;
+  --paper: #f3ebdd;
+  --paper-ink: #1a1510;
+  --bar-h: 64px;
+  --font: "Avenir Next", "Segoe UI Variable", "Segoe UI", system-ui, -apple-system, Roboto, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  height: 100%;
+  background: var(--ink);
+  color: var(--text);
+  font: 14px/1.4 var(--font);
+  overflow: hidden;
+}
+
+#stage {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  cursor: grab;
+  touch-action: none;
+}
+#stage.dragging { cursor: grabbing; }
+
+.sr {
+  position: absolute;
+  width: 1px; height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* Bottom control bar */
+#bar {
+  position: fixed;
+  left: 12px; right: 12px; bottom: 12px;
+  height: var(--bar-h);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 0 12px;
+  background: var(--ink-raised);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+#bar .group { display: flex; align-items: center; gap: 6px; flex: none; }
+
+button, select {
+  font: inherit;
+  color: var(--text);
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  height: 36px;
+  min-width: 36px;
+  padding: 0 10px;
+  cursor: pointer;
+}
+button:hover, select:hover { background: rgba(255, 255, 255, 0.07); }
+button:focus-visible, select:focus-visible, input:focus-visible, a:focus-visible {
+  outline: 2px solid var(--paper);
+  outline-offset: 2px;
+}
+button svg { width: 18px; height: 18px; display: block; margin: auto; fill: currentColor; }
+button.primary {
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  background: var(--paper);
+  color: var(--paper-ink);
+}
+button.primary:hover { background: #fff7e8; }
+button.toggle { color: var(--muted); }
+button.toggle[aria-pressed="true"] { color: var(--text); border-color: var(--line); background: rgba(255, 255, 255, 0.06); }
+button.recording { color: #ff8f8f; border-color: rgba(255, 143, 143, 0.5); }
+select { padding: 0 6px; appearance: none; -webkit-appearance: none; text-align: center; }
+select option { background: #101b25; color: var(--text); }
+
+.scrub { position: relative; flex: 1; height: 44px; min-width: 80px; }
+#spark { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+#seek {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background: transparent;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+#seek::-webkit-slider-runnable-track { height: 100%; background: transparent; }
+#seek::-moz-range-track { height: 100%; background: transparent; }
+#seek::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 4px; height: 44px;
+  border-radius: 2px;
+  background: var(--paper);
+  box-shadow: 0 0 0 3px rgba(243, 235, 221, 0.18);
+}
+#seek::-moz-range-thumb {
+  width: 4px; height: 44px;
+  border: 0; border-radius: 2px;
+  background: var(--paper);
+}
+
+/* Stats panel */
+#panel {
+  position: fixed;
+  top: 12px; right: 12px;
+  bottom: calc(var(--bar-h) + 24px);
+  width: 250px;
+  overflow: auto;
+  padding: 14px 16px;
+  background: var(--ink-raised);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+#panel[hidden] { display: none; }
+#panel h2 { margin: 14px 0 8px; font-size: 13px; font-weight: 600; color: var(--muted); }
+#panel section:first-child h2 { margin-top: 0; }
+.facts { margin: 0; display: grid; gap: 6px; }
+.facts div { display: flex; justify-content: space-between; align-items: baseline; }
+.facts dt { color: var(--muted); }
+.facts dd { margin: 0; font-variant-numeric: tabular-nums; font-weight: 600; }
+.rank { list-style: none; margin: 0; padding: 0; display: grid; gap: 5px; }
+.rank li { display: grid; grid-template-columns: 10px 1fr auto; gap: 8px; align-items: center; }
+.rank i { width: 10px; height: 10px; border-radius: 50%; display: block; }
+.rank span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.rank b { font-weight: 500; color: var(--muted); font-variant-numeric: tabular-nums; }
+.credit { margin: 18px 0 0; font-size: 12px; color: var(--muted); }
+.credit a { color: var(--text); }
+
+#tip {
+  position: fixed;
+  z-index: 5;
+  pointer-events: none;
+  max-width: 360px;
+  padding: 6px 9px;
+  background: rgba(8, 13, 19, 0.94);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font-size: 12px;
+  word-break: break-all;
+}
+#tip[hidden] { display: none; }
+
+#empty {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  color: var(--muted);
+  font-size: 16px;
+  pointer-events: none;
+}
+#empty[hidden] { display: none; }
+
+#toast {
+  position: fixed;
+  left: 50%;
+  bottom: calc(var(--bar-h) + 28px);
+  transform: translateX(-50%);
+  padding: 8px 14px;
+  background: rgba(8, 13, 19, 0.95);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.2s;
+  pointer-events: none;
+}
+#toast.show { opacity: 1; }
+
+@media (max-width: 760px) {
+  #bar { gap: 8px; padding: 0 8px; }
+  #bar .group:last-child button.toggle { display: none; }
+  .speed { display: none; }
+  #panel { width: auto; left: 12px; bottom: auto; max-height: 55%; }
+}
+
+body.recording #bar, body.recording #panel { opacity: 0; pointer-events: none; }
+</style>
+</head>
+<body>
+<canvas id="stage" aria-label="Animated visualization of the repository's history"></canvas>
+
+<div id="tip" role="tooltip" hidden></div>
+<div id="empty" hidden>No file changes to show for this range.</div>
+
+<aside id="panel" aria-label="Statistics" hidden>
+  <section>
+    <h2>So far</h2>
+    <dl class="facts">
+      <div><dt>Commits</dt><dd id="s-commits">0</dd></div>
+      <div><dt>Files</dt><dd id="s-files">0</dd></div>
+      <div><dt id="s-lines-label">Lines added</dt><dd id="s-lines">0</dd></div>
+    </dl>
+  </section>
+  <section>
+    <h2>Contributors</h2>
+    <ol id="s-authors" class="rank"></ol>
+  </section>
+  <section>
+    <h2>Languages</h2>
+    <ol id="s-langs" class="rank"></ol>
+  </section>
+  <p class="credit">Made with <a id="credit-link" href="#" target="_blank" rel="noopener">repo-replay</a>. Your history never left your machine.</p>
+</aside>
+
+<div id="toast" role="status" aria-live="polite"></div>
+
+<footer id="bar">
+  <div class="group">
+    <button id="play" class="primary" aria-label="Play" title="Play / pause (Space)"></button>
+    <button id="prev" aria-label="Previous commit" title="Previous commit (Left arrow)"></button>
+    <button id="next" aria-label="Next commit" title="Next commit (Right arrow)"></button>
+    <label class="speed" title="Playback speed (+ / -)">
+      <span class="sr">Speed</span>
+      <select id="speed">
+        <option value="0.25">0.25x</option>
+        <option value="0.5">0.5x</option>
+        <option value="1" selected>1x</option>
+        <option value="2">2x</option>
+        <option value="4">4x</option>
+        <option value="8">8x</option>
+      </select>
+    </label>
+  </div>
+  <div class="scrub">
+    <canvas id="spark" aria-hidden="true"></canvas>
+    <input id="seek" type="range" min="0" max="1" value="0" step="1" aria-label="Position in history">
+  </div>
+  <div class="group">
+    <button id="btn-labels" class="toggle" aria-pressed="true" title="Folder labels (L)">Labels</button>
+    <button id="btn-cam" class="toggle" aria-pressed="true" title="Camera follows the action (C)">Follow</button>
+    <button id="btn-panel" class="toggle" aria-pressed="false" title="Statistics (S)">Stats</button>
+    <button id="btn-rec" title="Record the replay as a video (R)">Record</button>
+    <button id="btn-full" aria-label="Fullscreen" title="Fullscreen (F)"></button>
+  </div>
+</footer>
+
+<script type="application/json" id="replay-config">{"watermark":true,"projectUrl":"https://github.com/mdzaman-01/repo-replay","version":"0.1.0"}</script>
+<script type="application/json" id="replay-data">{"v":1,"repo":"demo-project","generated":1792949428,"totalCommits":420,"hasLines":true,"maxDepth":0,"authors":["Maya Chen","Tomas Rivera","Priya Natarajan","Jonas Weber","Aiko Tanaka","Sam Okafor"],"files":["README.md","docs/chart_7.md","docs/schema_73.md","tests/parser_65.py","docs/layout_95.md","docs/parser_59.md","tests/search_47.py","docs/parser_81.md","docs/table_98.md","src/core/metrics_11.py","src/core/render_59.py","tests/format_20.py","tests/metrics_95.py","src/core/router_9.py","tests/import_6.py","tests/table_74.py","tests/schema_15.py","docs/cache_32.md","docs/layout_44.md","src/core/metrics_86.py","src/core/render_97.py","src/core/stream_39.py","tests/index_2.py","tests/tags_74.py","tests/users_29.py","docs/users_17.md","src/core/render_31.py","docs/forms_91.md","docs/limits_87.md","src/core/config_12.py","src/core/index_44.py","tests/chart_27.py","tests/export_57.py","tests/index_43.py","tests/index_61.py","tests/retry_39.py","tests/events_32.py","docs/logger_61.md","docs/tags_66.md","docs/worker_74.md","src/core/chart_98.py","src/core/format_63.py","src/core/import_44.py","src/core/parser_29.py","src/core/parser_55.py","tests/logger_82.py","src/core/index_80.py","src/core/rank_94.py","tests/storage_62.py","docs/limits_38.md","src/core/stream_66.py","tests/format_47.py","docs/export_42.md","src/core/tags_42.py","tests/schema_25.py","docs/limits_92.md","tests/schema_99.py","src/core/session_74.py","docs/rank_15.md","src/core/events_81.py","tests/token_20.py","docs/stream_59.md","src/core/import_41.py","docs/format_56.md","tests/theme_77.py","src/api/queue_11.py","docs/metrics_6.md","docs/router_44.md","src/api/layout_56.py","src/api/logger_46.py","src/api/render_24.py","src/core/logger_30.py","tests/config_35.py","src/api/metrics_48.py","src/core/worker_6.py","docs/client_76.md","docs/format_78.md","src/core/teams_4.py","src/core/chart_72.py","src/core/retry_65.py","tests/config_62.py","docs/metrics_60.md","src/core/client_16.py","tests/invoice_2.py","tests/filters_55.py","docs/table_66.md","docs/tags_67.md","src/api/users_33.py","docs/tags_33.md","src/api/retry_40.py","docs/filters_49.md","tests/chart_11.py","tests/theme_10.py","src/core/invoice_53.py","tests/events_79.py","tests/layout_86.py","docs/worker_85.md","src/api/teams_36.py","src/core/forms_54.py","docs/invoice_78.md","docs/search_7.md","docs/theme_28.md","docs/invoice_35.md","src/core/table_36.py","src/api/chart_57.py","tests/session_39.py","docs/search_50.md","src/core/search_62.py","tests/search_45.py","tests/cache_77.py","tests/parser_83.py","docs/session_55.md","src/api/chart_98.py","src/api/render_28.py","src/core/metrics_16.py","tests/config_69.py","src/api/token_37.py","tests/export_18.py","src/api/format_1.py","src/api/schema_24.py","src/core/filters_80.py","src/api/format_10.py","src/core/events_59.py","src/core/stream_28.py","tests/config_4.py","tests/rank_88.py","tests/schema_40.py","tests/teams_79.py","docs/forms_35.md","docs/schema_21.md","src/api/config_25.py","src/api/parser_94.py","src/api/search_16.py","src/api/theme_72.py","src/core/users_86.py","tests/queue_82.py","src/api/render_84.py","src/core/invoice_60.py","docs/metrics_93.md","tests/retry_54.py","tests/token_59.py","docs/limits_76.md","src/core/format_18.py","web/components/token_4.tsx","tests/client_73.py","tests/render_85.py","docs/logger_58.md","src/api/parser_72.py","docs/theme_83.md","docs/export_35.md","tests/index_51.py","src/api/teams_20.py","web/styles/logger_92.css","src/core/render_56.py","web/styles/theme_23.css","web/styles/theme_40.css","docs/storage_76.md","web/styles/forms_93.css","web/styles/layout_97.css","src/api/retry_25.py","src/core/layout_56.py","src/core/parser_20.py","web/styles/stream_53.css","src/api/metrics_77.py","src/api/schema_80.py","src/api/users_49.py","web/styles/schema_51.css","web/styles/session_10.css","src/api/metrics_72.py","tests/chart_82.py","web/styles/storage_29.css","docs/metrics_30.md","docs/router_90.md","docs/schema_86.md","src/api/client_8.py","tests/schema_70.py","web/components/invoice_65.tsx","web/components/tags_27.tsx","web/styles/client_14.css","src/api/layout_36.py","web/components/import_87.tsx","web/components/rank_8.tsx","src/api/client_42.py","tests/stream_92.py","web/components/schema_72.tsx","web/components/config_21.tsx","docs/metrics_26.md","src/api/worker_17.py","web/components/client_22.tsx","docs/theme_67.md","src/core/cache_63.py","tests/tags_87.py","web/styles/stream_25.css","web/styles/rank_22.css","web/components/logger_77.tsx","docs/client_3.md","src/api/metrics_51.py","docs/theme_88.md","web/components/tags_68.tsx","docs/router_74.md","web/styles/parser_30.css","src/plugins/auth/render_66.py","src/core/render_96.py","src/plugins/auth/tags_65.py","web/components/storage_41.tsx","src/api/router_67.py","docs/token_27.md","src/api/forms_25.py","src/api/limits_92.py","src/plugins/auth/batch_1.py","web/components/users_7.tsx","web/styles/index_75.css","src/plugins/auth/users_40.py","src/plugins/auth/stream_65.py","src/plugins/auth/limits_11.py","src/api/filters_52.py","docs/render_13.md","src/api/batch_64.py","src/core/logger_28.py","src/plugins/auth/import_71.py","src/plugins/auth/parser_73.py","src/plugins/billing/worker_84.py","web/styles/cache_38.css","docs/import_55.md","docs/worker_83.md","src/api/render_99.py","src/plugins/billing/index_9.py","web/styles/teams_83.css","src/plugins/billing/metrics_44.py","src/plugins/billing/parser_89.py","web/styles/render_2.css","src/core/import_85.py","web/components/filters_1.tsx","web/components/invoice_23.tsx","src/api/limits_15.py","src/api/teams_41.py","src/core/search_53.py","tests/invoice_4.py","web/styles/render_25.css","docs/storage_70.md","src/plugins/billing/layout_93.py","web/styles/config_25.css","src/plugins/search/import_9.py","tests/search_68.py","tests/stream_58.py","src/core/index_28.py","web/styles/teams_28.css","web/styles/parser_35.css","src/api/tags_93.py","src/plugins/billing/users_43.py","tests/router_47.py","docs/events_54.md","src/plugins/auth/search_26.py","src/plugins/auth/storage_35.py","src/plugins/search/batch_48.py","src/plugins/search/metrics_36.py","src/plugins/search/stream_78.py","tests/client_48.py","web/components/session_24.tsx","web/styles/router_78.css","docs/logger_8.md","src/core/filters_94.py","src/api/export_72.py","src/core/layout_81.py","src/core/retry_58.py","src/plugins/billing/layout_43.py","src/plugins/billing/schema_51.py","docs/table_96.md","src/plugins/search/search_46.py","web/components/router_80.tsx","web/styles/schema_9.css","src/plugins/billing/filters_1.py","src/plugins/billing/parser_86.py","web/styles/tags_50.css","src/plugins/billing/router_34.py","docs/retry_12.md","web/components/batch_86.tsx","web/styles/layout_89.css","src/plugins/export/filters_91.py","docs/session_26.md","src/plugins/auth/render_73.py","src/plugins/billing/cache_84.py","src/api/limits_68.py","src/plugins/search/worker_2.py","tests/metrics_33.py","web/components/stream_76.tsx","docs/index_98.md","src/api/events_74.py","src/plugins/auth/batch_32.py","src/plugins/billing/tags_25.py","src/plugins/billing/users_50.py","src/plugins/export/index_33.py","src/plugins/export/index_61.py","src/plugins/export/logger_74.py","web/components/search_43.tsx","web/styles/render_42.css","docs/cache_39.md","src/plugins/billing/client_92.py","src/plugins/auth/filters_27.py","src/plugins/search/export_84.py","src/plugins/auth/router_75.py","tests/users_13.py","src/plugins/billing/export_58.py","src/plugins/billing/import_25.py","docs/parser_16.md","src/plugins/billing/queue_73.py","src/plugins/search/worker_65.py","assets/img/session_2.png","src/plugins/billing/queue_68.py","web/styles/worker_41.css","src/plugins/export/filters_77.py","src/plugins/auth/chart_67.py","web/components/schema_70.tsx","web/styles/invoice_13.css","src/core/layout_29.py","web/components/rank_74.tsx","src/plugins/search/session_62.py","tests/filters_37.py","src/plugins/billing/worker_93.py","web/components/tags_63.tsx","web/styles/metrics_75.css","src/plugins/search/stream_85.py","scripts/config_43.sh","src/plugins/billing/render_57.py","src/core/events_30.py","scripts/render_85.sh","src/core/teams_59.py","assets/img/storage_56.png","src/plugins/billing/forms_87.py","src/plugins/billing/layout_5.py","src/plugins/search/logger_27.py","assets/img/invoice_39.png","src/core/token_85.py","src/plugins/export/schema_95.py","src/plugins/export/router_16.py","web/components/export_27.tsx","scripts/rank_64.sh","scripts/tags_86.sh","src/plugins/billing/render_4.py","assets/img/session_15.png","docs/users_83.md","scripts/limits_86.sh","src/plugins/billing/events_51.py","scripts/rank_27.sh","tests/filters_11.py","web/components/token_81.tsx","src/core/table_49.py","src/plugins/auth/cache_14.py","src/plugins/billing/users_5.py","src/core/theme_29.py","src/plugins/search/router_42.py","web/styles/layout_59.css","src/plugins/search/cache_36.py","web/components/session_16.tsx","web/styles/worker_92.css","assets/img/logger_32.png","scripts/layout_26.sh","scripts/limits_98.sh","scripts/stream_31.sh","tests/theme_3.py","scripts/batch_5.sh","web/components/search_55.tsx","web/styles/filters_8.css","tests/client_85.py","assets/img/teams_27.png","src/plugins/export/layout_50.py","web/styles/tags_85.css","src/ml/storage_24.py","web/pages/queue_56.tsx","src/api/forms_66.py","src/plugins/billing/batch_72.py","src/plugins/export/render_55.py","web/pages/table_96.tsx","assets/img/rank_91.png","src/plugins/auth/schema_34.py","web/pages/queue_75.tsx","src/api/table_97.py","web/pages/forms_21.tsx","web/styles/router_54.css","assets/img/chart_17.png","assets/img/metrics_47.png","src/api/worker_33.py","src/ml/storage_81.py","src/plugins/search/theme_14.py","assets/img/worker_80.png","web/pages/events_79.tsx","web/pages/retry_37.tsx","src/ml/import_97.py","src/plugins/auth/schema_27.py","src/plugins/export/retry_92.py","web/components/cache_92.tsx","web/components/token_30.tsx","assets/img/retry_61.png","src/plugins/billing/teams_22.py","src/plugins/export/config_62.py","src/plugins/export/render_77.py","src/plugins/search/events_69.py","src/plugins/search/queue_71.py","web/styles/batch_74.css","web/styles/theme_1.css","docs/storage_82.md","src/ml/storage_9.py","src/plugins/auth/layout_69.py","assets/img/export_79.png","web/pages/forms_81.tsx","web/pages/logger_40.tsx","tests/search_52.py","web/pages/rank_40.tsx","src/plugins/auth/retry_49.py","src/plugins/search/rank_35.py","web/pages/layout_75.tsx","src/plugins/auth/schema_61.py","src/plugins/export/theme_20.py","tests/format_2.py","src/ml/batch_91.py","src/plugins/billing/cache_35.py","web/components/worker_74.tsx","scripts/router_99.sh","scripts/theme_71.sh","src/plugins/export/users_22.py","scripts/table_10.sh","src/plugins/auth/theme_55.py","assets/img/export_7.png","src/ml/rank_95.py","scripts/config_27.sh","src/plugins/auth/worker_49.py","web/components/tags_31.tsx","web/styles/token_57.css","scripts/storage_48.sh","scripts/index_98.sh","web/styles/client_66.css","src/plugins/auth/metrics_1.py","src/plugins/billing/theme_50.py","assets/img/logger_39.png","docs/search_47.md","src/plugins/auth/format_81.py","src/plugins/auth/index_93.py","src/plugins/auth/queue_61.py","src/plugins/auth/table_91.py","tests/schema_18.py","assets/img/teams_78.png","scripts/client_95.sh","src/core/search_21.py","src/plugins/auth/router_17.py","src/plugins/auth/session_54.py","src/plugins/auth/teams_10.py","src/plugins/billing/router_51.py","src/plugins/search/teams_18.py","web/pages/rank_11.tsx","assets/img/invoice_61.png","docs/import_99.md","src/ml/forms_24.py","src/ml/session_92.py","src/plugins/billing/cache_30.py","src/plugins/billing/metrics_79.py","src/plugins/billing/schema_56.py","src/plugins/search/batch_73.py","web/pages/chart_40.tsx","assets/img/session_79.png","scripts/storage_84.sh","web/pages/import_10.tsx","src/plugins/export/tags_33.py","scripts/chart_23.sh","src/plugins/search/index_65.py","config/layout_17.yml","scripts/storage_70.sh","web/pages/config_6.tsx","assets/img/worker_20.png","src/plugins/search/users_69.py","tests/schema_28.py","tests/render_10.py","assets/img/session_89.png","src/plugins/search/parser_68.py","src/plugins/search/users_20.py","config/index_67.yml","src/core/router_51.py","src/ml/table_65.py","src/plugins/billing/client_30.py","scripts/storage_23.sh","src/plugins/export/logger_33.py","src/plugins/search/storage_91.py","config/stream_56.yml","src/plugins/billing/parser_93.py","web/styles/format_32.css","src/plugins/export/tags_40.py","web/pages/search_93.tsx","web/styles/storage_58.css","src/plugins/export/storage_60.py","src/plugins/search/rank_93.py","scripts/token_31.sh","src/ml/queue_3.py","assets/img/retry_19.png","src/plugins/billing/import_74.py","src/plugins/billing/render_23.py","src/plugins/export/users_82.py","tests/filters_7.py","assets/img/format_9.png","assets/img/token_60.png","config/render_99.yml","src/plugins/search/limits_29.py","src/plugins/search/render_84.py","assets/img/search_12.png","docs/filters_89.md","src/plugins/billing/limits_24.py","assets/img/search_99.png","src/plugins/auth/cache_77.py","src/plugins/search/schema_79.py","config/token_87.yml","config/theme_3.yml","scripts/format_2.sh","scripts/token_41.sh","scripts/token_88.sh","src/ml/schema_48.py","src/plugins/auth/search_49.py","src/plugins/billing/retry_91.py","src/plugins/search/events_9.py","web/pages/filters_38.tsx","web/pages/retry_95.tsx","assets/img/router_16.png","config/metrics_82.yml","src/ml/format_68.py","src/plugins/search/events_82.py","web/pages/retry_41.tsx","web/pages/export_7.tsx","src/ml/storage_99.py","src/plugins/search/table_53.py","web/pages/logger_38.tsx"],"commits":[[1673274040,0,"Initial commit",[[0,0,3,0],[1,0,20,0],[2,0,9,0],[3,0,57,0]]],[1673476502,1,"Refactor export docs",[[3,1,24,8]]],[1673637750,0,"Handle errors in layout flow",[[4,0,22,0],[5,0,55,0],[3,1,45,9],[6,0,89,0]]],[1673779572,0,"Simplify config logic",[[0,1,2,1],[2,1,4,2],[6,1,33,13]]],[1673991751,0,"Clean up schema docs",[[7,0,7,0],[8,0,26,0],[9,0,21,0]]],[1674080312,1,"Handle errors in schema tests",[[2,1,3,2],[8,1,10,5],[9,1,39,2]]],[1674277042,1,"Test forms logic",[[5,1,7,7]]],[1674421082,1,"Fix storage flow",[[6,1,33,16]]],[1674618908,0,"Document filters docs",[[8,1,4,4],[6,1,37,40]]],[1674743851,0,"Fix retry flow",[[0,1,7,0],[1,1,13,7],[6,1,3,19]]],[1674846506,0,"Test metrics logic",[[7,1,8,1],[6,1,45,12]]],[1675047336,1,"Document rank handling",[[9,1,51,7],[3,1,67,33]]],[1675210852,0,"Extend session handling",[[1,1,8,5],[2,1,26,5]]],[1675374130,0,"Rename schema flow",[[4,1,12,5]]],[1675496667,1,"Rename session flow",[[10,0,108,0],[11,0,21,0],[12,0,27,0]]],[1675651684,1,"Simplify worker flow",[[13,0,150,0],[14,0,96,0],[15,0,162,0]]],[1675832174,0,"Document index logic",[[10,1,51,19]]],[1676039499,1,"Simplify table handling",[[4,1,7,3],[7,1,4,1],[15,1,42,30]]],[1676152544,1,"Clean up worker handling",[[1,1,15,3],[10,1,24,23],[3,1,35,17]]],[1676258050,0,"Tighten import handling",[[1,1,3,7],[7,1,13,3],[12,1,54,4]]],[1676433020,1,"Refactor invoice docs",[[0,1,2,3],[3,1,3,26]]],[1676597669,0,"Extend storage docs",[[1,1,5,2],[16,0,61,0]]],[1676751277,0,"Test config flow",[[13,1,77,43],[12,1,42,12]]],[1676923015,0,"Rename format docs",[[7,1,17,2],[3,1,30,14]]],[1677056164,0,"Extend layout logic",[[0,1,36,5],[17,0,12,0],[1,1,20,15],[18,0,38,0],[2,1,9,7],[9,1,51,12],[19,0,180,0],[20,0,27,0],[21,0,93,0],[22,0,54,0],[3,1,35,25],[23,0,117,0],[24,0,51,0]]],[1677236669,0,"Speed up render tests",[[17,1,2,1]]],[1677396682,1,"Handle errors in batch flow",[[0,1,12,6],[7,1,4,4]]],[1677519314,1,"Tighten logger docs",[[22,1,53,11],[12,1,48,15]]],[1677681327,0,"Refactor search handling",[[3,1,47,22]]],[1677852369,0,"Handle errors in invoice flow",[[15,1,41,27]]],[1677995364,0,"Document export tests",[[25,0,15,0],[26,0,27,0]]],[1678169184,0,"Clean up worker tests",[[19,1,30,20]]],[1678340209,0,"Test limits tests",[[21,2,0,93],[12,2,0,140]]],[1678512116,1,"Clean up table handling",[[27,0,17,0],[18,1,17,6],[28,0,37,0],[8,1,4,5],[29,0,144,0],[30,0,87,0],[31,0,48,0],[32,0,66,0],[33,0,136,0],[34,0,33,0],[35,0,33,0],[16,1,21,4]]],[1678706363,0,"Refactor stream logic",[[6,1,54,27]]],[1678859065,1,"Handle errors in events docs",[[18,1,5,9]]],[1679016122,0,"Clean up worker handling",[[36,0,150,0]]],[1679110143,0,"Simplify rank handling",[[0,1,12,4],[27,1,15,1],[37,0,37,0],[7,1,18,6],[38,0,39,0],[39,0,8,0],[40,0,75,0],[41,0,120,0],[42,0,69,0],[30,1,72,25],[43,0,18,0],[44,0,156,0],[22,1,19,28],[45,0,114,0],[3,1,24,26],[16,1,48,19],[24,1,38,8]]],[1679306777,0,"Extend theme tests",[[5,1,5,6],[46,0,117,0],[9,1,51,22],[47,0,42,0],[48,0,18,0]]],[1679466811,0,"Fix render handling",[[27,1,17,8]]],[1679538042,0,"Test filters handling",[[38,1,11,10],[39,1,8,1],[40,1,42,18]]],[1679735741,1,"Fix invoice flow",[[27,1,14,7]]],[1679909087,1,"Document rank tests",[[49,0,59,0],[50,0,30,0],[51,0,69,0]]],[1680107569,0,"Extend worker tests",[[52,0,31,0],[53,0,156,0],[54,0,156,0]]],[1680222900,2,"Speed up search logic",[[45,1,3,19],[54,1,47,20]]],[1680354697,0,"Handle errors in chart docs",[[28,1,17,4],[55,0,11,0],[19,1,18,26],[56,0,87,0]]],[1680503561,2,"Fix table flow",[[14,1,9,17]]],[1680756063,0,"Test index logic",[[57,0,51,0]]],[1680840679,2,"Speed up search handling",[[10,1,48,17],[51,1,39,13]]],[1681006802,0,"Add config flow",[[7,1,1,6],[6,1,45,23]]],[1681113830,2,"Refactor theme docs",[[28,1,2,7],[58,0,49,0],[59,0,174,0],[31,1,54,3],[34,1,33,2],[6,1,42,31],[48,1,18,6],[60,0,177,0]]],[1681342178,2,"Handle errors in layout handling",[[1,1,4,6],[61,0,27,0],[62,0,96,0],[36,1,24,24]]],[1681498833,2,"Simplify limits flow",[[63,0,11,0],[64,0,138,0]]],[1681646902,2,"Simplify worker docs",[[65,0,120,0]]],[1681805812,2,"Handle errors in index docs",[[27,1,18,9],[66,0,18,0],[5,1,8,7],[67,0,45,0],[68,0,81,0],[69,0,69,0],[70,0,159,0],[71,0,177,0],[44,1,24,23],[72,0,63,0],[36,1,15,21],[32,1,21,12],[14,1,15,10],[22,1,45,10],[45,1,45,13],[60,1,51,29]]],[1681941957,0,"Refactor rank flow",[[25,1,11,1],[68,1,9,8],[73,0,162,0],[74,0,21,0]]],[1682165921,0,"Fix worker handling",[[26,1,45,5]]],[1682304331,1,"Fix export logic",[[75,0,6,0],[76,0,11,0],[77,0,129,0]]],[1682391070,2,"Tighten config handling",[[78,0,75,0],[79,0,66,0],[80,0,27,0]]],[1682589227,0,"Test config flow",[[28,1,2,6],[81,0,14,0],[7,1,12,6],[82,0,120,0],[83,0,177,0]]],[1682751591,1,"Fix export tests",[[25,1,8,4]]],[1682823057,0,"Handle errors in client logic",[[63,1,13,2],[69,1,2,3],[31,1,3,18]]],[1683010392,0,"Rename rank docs",[[42,1,27,11]]],[1683182933,0,"Document teams tests",[[84,0,132,0]]],[1683348712,2,"Document import logic",[[52,1,12,6],[85,0,44,0],[11,1,39,2]]],[1683484361,1,"Handle errors in parser tests",[[86,0,23,0],[87,0,18,0]]],[1683643678,0,"Clean up parser tests",[[20,1,45,3],[13,1,17,25],[15,1,15,29]]],[1683846153,1,"Tighten chart docs",[[75,1,3,0],[88,0,9,0],[74,1,15,3]]],[1683927505,1,"Tighten cache docs",[[40,1,45,15]]],[1684148752,0,"Tighten cache tests",[[55,1,8,1],[73,1,21,22]]],[1684285349,0,"Tighten table logic",[[31,1,26,18],[45,1,6,16]]],[1684398447,2,"Fix logger flow",[[70,1,14,19],[72,1,3,7]]],[1684644030,0,"Test format handling",[[89,0,84,0]]],[1684753023,0,"Fix config logic",[[4,1,12,6],[11,1,33,12]]],[1684921997,2,"Clean up storage flow",[[52,1,14,4],[41,1,21,24]]],[1685106114,0,"Clean up export docs",[[90,0,22,0],[91,0,36,0],[92,0,45,0]]],[1685231759,0,"Clean up invoice docs",[[1,1,1,10],[31,1,48,9],[16,1,30,17]]],[1685375095,2,"Document teams docs",[[80,2,0,27],[16,2,0,120]]],[1685575297,1,"Tighten token handling",[[93,0,75,0],[94,0,162,0],[95,0,81,0]]],[1685658772,2,"Test events logic",[[71,1,51,31],[50,1,45,4]]],[1685837990,0,"Handle errors in router tests",[[58,1,9,11],[20,1,27,16],[94,1,24,23]]],[1686025399,0,"Extend search docs",[[96,0,14,0],[97,0,57,0],[98,0,27,0],[62,1,3,10],[42,1,24,5]]],[1686158843,1,"Simplify tags handling",[[99,0,43,0],[100,0,49,0],[101,0,47,0]]],[1686359672,0,"Handle errors in export tests",[[102,0,17,0],[103,0,57,0]]],[1686498898,0,"Handle errors in worker handling",[[3,1,6,26]]],[1686600146,1,"Document chart logic",[[85,1,8,5]]],[1686838872,2,"Fix retry docs",[[52,1,7,3],[62,1,27,13],[19,1,30,25]]],[1686975150,0,"Fix parser handling",[[55,1,15,6],[46,1,54,18],[20,1,45,9]]],[1687104251,0,"Rename render handling",[[96,1,11,3],[30,1,33,17],[45,1,27,16]]],[1687327839,1,"Rename schema tests",[[104,0,87,0],[105,0,168,0]]],[1687491698,1,"Extend stream handling",[[106,0,20,0]]],[1687555845,2,"Document events tests",[[107,0,45,0],[108,0,36,0]]],[1687785982,2,"Test layout handling",[[109,0,33,0],[110,0,87,0]]],[1687860842,2,"Fix config flow",[[15,2,0,174]]],[1688009212,2,"Refactor session handling",[[66,1,6,1],[111,0,12,0],[112,0,93,0],[70,1,12,18],[113,0,63,0],[97,1,3,9],[93,1,24,9],[114,0,60,0],[74,1,54,4],[91,1,18,3],[115,0,78,0],[51,1,27,13],[3,1,26,22],[108,1,11,3],[23,1,85,39]]],[1688225147,2,"Extend render flow",[[116,0,108,0],[117,0,165,0]]],[1688399392,0,"Document forms handling",[[118,0,129,0],[119,0,99,0],[120,0,135,0]]],[1688538305,1,"Document chart handling",[[75,1,23,3],[103,1,14,8]]],[1688661474,2,"Refactor search flow",[[52,1,17,4],[41,1,27,19]]],[1688817392,0,"Document import logic",[[58,2,0,47],[33,2,0,136]]],[1689026659,0,"Handle errors in retry logic",[[35,1,33,3]]],[1689190926,2,"Fix format logic",[[39,1,10,2]]],[1689320595,2,"Rename metrics tests",[[96,1,12,3]]],[1689432803,2,"Test worker handling",[[17,1,12,1],[78,1,12,12],[77,1,47,15]]],[1689606001,1,"Fix router flow",[[32,1,27,18]]],[1689770813,1,"Handle errors in retry flow",[[121,0,180,0],[122,0,54,0],[123,0,42,0]]],[1689918916,2,"Clean up layout tests",[[72,1,51,11]]],[1690144665,0,"Handle errors in format logic",[[73,1,39,26]]],[1690291971,2,"Document rank flow",[[1,1,5,5],[110,1,33,11],[105,1,36,27]]],[1690405343,2,"Handle errors in forms flow",[[73,1,20,22]]],[1690553930,0,"Speed up chart tests",[[124,0,144,0]]],[1690747801,0,"Clean up theme logic",[[69,1,30,11],[44,1,42,30],[48,1,42,2]]],[1690884454,0,"Refactor invoice flow",[[125,0,30,0],[126,0,93,0],[127,0,39,0]]],[1691006565,0,"Document session handling",[[128,0,41,0],[102,1,18,3],[129,0,13,0],[100,1,15,15],[61,1,8,3],[130,0,165,0],[131,0,72,0],[65,1,36,16],[132,0,51,0],[133,0,144,0],[46,1,23,26],[47,1,3,10],[134,0,21,0],[109,1,3,5],[31,1,48,25],[117,1,3,29],[135,0,150,0]]],[1691165505,0,"Speed up queue flow",[[124,1,21,19],[125,1,53,3]]],[1691404191,0,"Rename retry tests",[[136,0,135,0],[137,0,177,0]]],[1691544300,1,"Speed up client docs",[[138,0,27,0],[139,0,84,0],[140,0,99,0]]],[1691658286,0,"Refactor rank handling",[[81,1,18,0]]],[1691878356,1,"Simplify token handling",[[141,0,28,0],[142,0,117,0]]],[1691933554,2,"Add schema tests",[[30,1,44,23]]],[1692114935,1,"Add batch handling",[[101,1,14,9],[6,1,9,30]]],[1692296028,1,"Test teams tests",[[77,1,24,23]]],[1692433483,2,"Clean up client tests",[[17,1,3,2],[8,1,15,7],[121,1,33,25]]],[1692612643,1,"Fix cache tests",[[97,1,42,5]]],[1692712664,1,"Extend parser docs",[[90,1,5,3],[97,1,12,17],[20,1,9,15]]],[1692907334,0,"Handle errors in batch handling",[[143,0,50,0]]],[1693109260,3,"Test schema flow",[[144,0,93,0],[145,0,117,0]]],[1693231814,1,"Speed up cache logic",[[133,1,54,22]]],[1693357075,3,"Test stream logic",[[14,1,51,14],[34,1,5,11]]],[1693579717,1,"Extend format flow",[[146,0,9,0],[147,0,90,0]]],[1693732595,3,"Document logger handling",[[148,0,41,0]]],[1693863036,0,"Add index logic",[[149,0,53,0],[150,0,102,0]]],[1693991142,0,"Simplify metrics tests",[[57,1,6,5]]],[1694204176,0,"Tighten router flow",[[46,1,11,26],[74,1,54,15],[144,1,50,10]]],[1694306949,2,"Extend import tests",[[151,0,141,0],[152,0,16,0]]],[1694513666,3,"Handle errors in render handling",[[2,1,7,4],[39,1,17,7],[65,1,54,20],[29,1,21,16],[153,0,129,0],[134,1,33,3],[72,1,18,18],[117,1,12,25],[11,1,18,17],[125,1,15,11],[105,1,6,23],[23,1,12,26],[154,0,13,0],[155,0,59,0]]],[1694628548,2,"Refactor tags docs",[[156,0,51,0]]],[1694796330,0,"Document export flow",[[128,1,14,2]]],[1694896713,0,"Add teams tests",[[157,0,43,0],[158,0,43,0]]],[1695123006,0,"Clean up queue docs",[[153,1,54,18]]],[1695287755,1,"Document search flow",[[159,0,108,0],[160,0,180,0],[161,0,99,0]]],[1695406861,0,"Clean up index logic",[[71,1,51,32],[158,1,13,11],[162,0,50,0]]],[1695621981,2,"Rename cache tests",[[163,0,114,0],[164,0,99,0]]],[1695686806,2,"Document batch handling",[[55,1,15,5]]],[1695897570,3,"Extend search flow",[[140,1,3,20]]],[1696060080,0,"Document search handling",[[165,0,171,0],[166,0,22,0],[167,0,43,0]]],[1696225439,0,"Extend retry logic",[[168,0,96,0],[169,0,123,0],[170,0,35,0]]],[1696391521,0,"Rename schema logic",[[146,1,9,0],[171,0,54,0],[81,1,15,9],[172,0,53,0],[173,0,18,0],[8,1,5,2],[174,0,75,0],[71,1,6,35],[47,1,9,4],[139,1,33,13],[175,0,75,0],[64,1,9,24],[176,0,12,0],[177,0,55,0],[143,1,17,8],[178,0,16,0]]],[1696534669,3,"Clean up parser handling",[[9,1,36,24],[140,1,21,13],[152,1,2,1]]],[1696671481,2,"Speed up users docs",[[179,0,45,0],[180,0,15,0],[181,0,42,0]]],[1696862034,0,"Clean up config handling",[[182,0,111,0],[183,0,162,0],[184,0,52,0]]],[1696942816,1,"Extend client docs",[[185,0,27,0]]],[1697186207,2,"Tighten export handling",[[70,1,6,19],[71,1,54,36],[170,1,11,4]]],[1697289169,0,"Handle errors in layout logic",[[90,1,4,4],[141,1,2,4],[39,1,12,6]]],[1697424975,2,"Simplify forms handling",[[139,1,21,24],[184,1,4,15]]],[1697645398,0,"Refactor parser docs",[[55,1,4,3],[133,1,54,24],[135,1,24,25]]],[1697758461,2,"Handle errors in router logic",[[101,1,4,7],[119,1,51,14],[134,1,2,9]]],[1697915517,0,"Speed up format flow",[[182,1,21,12]]],[1698067322,0,"Speed up layout handling",[[17,1,14,1],[101,1,9,7],[10,1,48,28]]],[1698285770,1,"Handle errors in table docs",[[133,1,48,31]]],[1698439201,0,"Handle errors in logger flow",[[41,1,39,26]]],[1698512054,3,"Extend table tests",[[176,1,1,1]]],[1698737711,2,"Speed up forms handling",[[186,0,16,0],[187,0,159,0],[188,0,19,0]]],[1698914681,1,"Simplify table logic",[[189,0,24,0],[190,0,126,0]]],[1699005429,1,"Handle errors in theme docs",[[191,0,72,0],[192,0,32,0]]],[1699200913,1,"Handle errors in render handling",[[193,0,27,0]]],[1699294336,2,"Speed up session logic",[[194,0,13,0]]],[1699480353,3,"Fix filters tests",[[125,1,36,12],[154,1,3,2]]],[1699684190,1,"Add retry tests",[[195,0,45,0],[196,0,42,0]]],[1699816971,3,"Document render flow",[[26,1,42,9],[74,1,3,19]]],[1699974777,3,"Add router handling",[[76,1,9,2],[25,1,11,4],[57,1,36,6]]],[1700118320,2,"Rename schema flow",[[197,0,24,0],[112,1,70,23]]],[1700321664,3,"Test worker logic",[[50,1,48,12]]],[1700388091,2,"Tighten worker tests",[[32,1,48,15]]],[1700593275,1,"Refactor search logic",[[198,0,39,0]]],[1700731060,0,"Refactor export handling",[[199,0,28,0],[39,1,17,9],[136,1,33,25],[200,0,47,0]]],[1700933081,0,"Refactor session flow",[[87,1,48,5],[30,1,37,30],[31,1,51,26]]],[1701058497,1,"Extend router docs",[[201,0,18,0]]],[1701180327,3,"Refactor client docs",[[202,0,75,0],[203,0,120,0],[204,0,38,0]]],[1701418654,0,"Refactor invoice flow",[[205,0,99,0]]],[1701510627,0,"Simplify users handling",[[144,2,0,133]]],[1701724210,2,"Tighten forms handling",[[121,1,5,24],[114,1,18,5]]],[1701835834,2,"Tighten forms flow",[[73,1,15,15],[200,1,16,9]]],[1702035500,0,"Speed up retry docs",[[27,1,14,15],[55,1,18,6],[186,1,3,0],[206,0,18,0],[207,0,18,0],[68,1,26,14],[208,0,24,0],[69,1,24,6],[59,1,35,14],[123,1,27,7],[209,0,27,0],[91,1,15,6],[135,1,12,24],[180,1,11,1],[210,0,34,0],[211,0,50,0],[192,1,12,4]]],[1702144038,3,"Test metrics flow",[[30,1,3,29],[50,1,20,15]]],[1702332424,0,"Fix queue logic",[[109,1,30,4],[169,1,15,15]]],[1702529014,3,"Add rank handling",[[2,1,5,5],[196,1,39,7],[26,1,33,23]]],[1702671178,3,"Fix index tests",[[69,1,42,16],[62,1,27,13],[105,1,21,27]]],[1702794691,3,"Simplify session docs",[[212,0,141,0]]],[1702958087,0,"Clean up schema tests",[[213,0,93,0]]],[1703081402,2,"Tighten limits docs",[[133,1,48,35]]],[1703254363,0,"Clean up search tests",[[214,0,51,0]]],[1703376940,1,"Test batch logic",[[215,0,27,0],[151,1,27,14],[142,1,39,16]]],[1703574083,0,"Fix router handling",[[71,1,36,29],[22,1,39,21]]],[1703726130,2,"Fix parser docs",[[45,1,42,23]]],[1703863295,3,"Test session tests",[[4,1,17,5],[216,0,13,0],[189,1,16,3],[217,0,111,0],[218,0,51,0],[123,1,48,8],[219,0,180,0],[220,0,132,0],[221,0,159,0],[105,1,30,23],[222,0,45,0]]],[1704068920,2,"Add client docs",[[53,1,23,16]]],[1704164760,0,"Test filters handling",[[223,0,45,0],[224,0,42,0],[225,0,126,0]]],[1704329675,1,"Add import tests",[[226,0,66,0],[227,0,33,0]]],[1704513205,2,"Handle errors in format docs",[[55,1,3,9],[132,1,24,7],[228,0,102,0],[229,0,138,0],[230,0,30,0]]],[1704644685,0,"Extend invoice handling",[[230,1,4,3]]],[1704801295,3,"Simplify client flow",[[2,1,5,3],[231,0,69,0],[175,1,30,7],[232,0,9,0],[233,0,36,0]]],[1704941566,3,"Document users handling",[[7,1,13,13],[213,1,3,13]]],[1705096972,0,"Document batch flow",[[35,1,15,6]]],[1705299511,2,"Extend retry flow",[[63,1,1,4],[172,1,3,7],[86,1,3,3],[234,0,69,0],[73,1,6,26],[235,0,81,0],[116,1,30,17],[87,1,24,10],[142,1,50,16],[20,1,11,18],[79,1,36,12],[236,0,141,0],[237,0,144,0],[188,1,1,3],[143,1,10,12],[238,0,34,0]]],[1705486865,1,"Clean up search flow",[[5,1,10,8]]],[1705640772,2,"Rename retry tests",[[76,1,4,4],[48,1,27,8]]],[1705793620,2,"Fix events logic",[[132,1,48,12]]],[1705974529,1,"Tighten theme logic",[[130,1,21,30],[220,1,53,17],[211,1,6,5]]],[1706073949,0,"Extend router flow",[[239,0,43,0],[240,0,114,0]]],[1706235245,0,"Rename worker logic",[[161,1,27,19]]],[1706449040,2,"Handle errors in format logic",[[241,0,57,0]]],[1706524626,0,"Add index logic",[[107,2,0,45]]],[1706728902,0,"Simplify limits flow",[[223,1,9,7],[242,0,72,0],[94,1,30,19]]],[1706864484,0,"Tighten teams flow",[[120,1,27,18],[213,1,24,10]]],[1707009620,4,"Add client logic",[[243,0,21,0],[244,0,147,0]]],[1707172692,4,"Extend filters logic",[[245,0,126,0],[246,0,44,0]]],[1707331696,3,"Handle errors in retry flow",[[32,1,18,22]]],[1707484470,0,"Fix import flow",[[247,0,8,0]]],[1707670296,4,"Fix storage docs",[[76,1,7,2],[231,1,27,7]]],[1707812029,0,"Fix storage tests",[[41,1,45,19],[222,1,7,6]]],[1707899153,3,"Extend retry tests",[[248,0,105,0],[249,0,126,0],[250,0,39,0]]],[1708157312,3,"Speed up render handling",[[149,1,17,5],[113,1,12,7]]],[1708249978,2,"Simplify cache flow",[[251,0,36,0],[149,1,3,10],[128,1,4,8],[5,1,8,8],[217,1,23,21],[73,1,35,23],[196,1,12,7],[231,1,15,24],[79,1,33,16],[252,0,150,0],[253,0,132,0],[254,0,168,0],[255,0,132,0],[256,0,60,0],[169,1,39,17],[257,0,111,0],[56,1,3,8],[180,1,9,6],[258,0,6,0],[259,0,39,0]]],[1708386471,2,"Tighten parser tests",[[260,0,46,0],[261,0,159,0]]],[1708543448,3,"Handle errors in worker logic",[[195,1,18,4],[63,1,14,5],[111,1,17,2],[239,1,14,6],[182,1,33,21],[262,0,54,0],[164,1,18,16],[263,0,141,0],[218,1,48,2],[264,0,102,0],[265,0,138,0],[266,0,42,0],[254,1,35,25],[35,1,51,9],[185,1,1,6],[232,1,7,1],[204,1,14,7],[152,1,3,1],[192,1,15,4]]],[1708756217,1,"Test search tests",[[128,1,2,8],[5,1,3,5],[153,1,27,26]]],[1708889017,2,"Fix config logic",[[267,0,26,0],[101,1,13,5],[235,1,3,8],[231,1,18,10],[161,1,9,13],[268,0,171,0],[34,1,23,8],[108,1,18,5],[269,0,58,0],[270,0,48,0]]],[1709020398,4,"Test format docs",[[218,1,51,9],[238,1,4,6],[167,1,7,5]]],[1709226310,0,"Clean up logger logic",[[14,1,14,25]]],[1709340352,3,"Handle errors in filters flow",[[271,0,156,0],[272,0,159,0],[273,0,51,0]]],[1709489964,2,"Test rank tests",[[26,1,21,15],[274,0,63,0],[273,1,17,9]]],[1709728523,0,"Tighten router tests",[[209,1,6,3]]],[1709824516,0,"Tighten schema handling",[[275,0,21,0],[20,1,53,17],[276,0,36,0],[188,1,10,2],[277,0,39,0]]],[1710042724,0,"Add limits flow",[[278,0,133,0],[145,1,27,13]]],[1710153473,0,"Simplify config docs",[[279,0,15,0],[280,0,63,0],[281,0,87,0]]],[1710349279,3,"Test config docs",[[173,1,1,2],[262,1,21,9],[250,1,30,6]]],[1710523631,1,"Add queue logic",[[4,1,4,2]]],[1710625354,0,"Speed up token logic",[[148,1,1,10],[282,0,165,0],[218,1,32,21],[44,1,6,21],[226,1,30,6],[283,0,63,0],[22,1,48,18],[284,0,123,0],[64,1,32,26],[285,0,27,0]]],[1710800318,3,"Handle errors in router logic",[[247,1,10,2]]],[1710996372,4,"Document logger flow",[[190,1,30,17]]],[1711048529,3,"Speed up parser handling",[[251,1,3,7],[286,0,53,0],[287,0,129,0],[136,1,6,22],[231,1,27,13],[93,1,54,16],[288,0,132,0],[272,1,48,24],[229,1,12,16],[289,0,36,0],[290,0,24,0],[291,0,18,0],[292,0,165,0],[293,0,135,0],[3,1,17,22],[6,1,12,29],[294,0,23,0],[143,1,10,9],[295,0,6,0],[246,1,5,7]]],[1711245004,3,"Clean up export docs",[[296,0,35,0],[297,0,45,0]]],[1711429375,3,"Document invoice logic",[[298,0,99,0],[281,1,21,12],[297,1,33,4],[299,0,102,0]]],[1711543262,3,"Fix config flow",[[300,0,108,0]]],[1711681604,1,"Handle errors in tags tests",[[130,1,14,24],[160,1,42,30],[60,1,15,28]]],[1711820757,2,"Document tags logic",[[301,0,33,0]]],[1712076385,4,"Simplify table flow",[[302,0,75,0],[303,0,123,0]]],[1712233605,2,"Extend router tests",[[172,1,7,9]]],[1712351635,0,"Add teams flow",[[172,1,16,4],[159,1,39,17]]],[1712473316,3,"Clean up logger handling",[[206,1,15,4]]],[1712659990,0,"Clean up metrics logic",[[304,0,10,0],[305,0,84,0]]],[1712839527,1,"Clean up chart docs",[[279,1,15,3],[206,1,16,6],[306,0,168,0]]],[1713000449,3,"Fix storage flow",[[168,1,42,13],[65,1,36,29]]],[1713171266,3,"Tighten index docs",[[307,0,0,0],[308,0,174,0],[221,1,26,31],[95,1,30,10],[309,0,59,0]]],[1713251230,4,"Add index docs",[[104,1,21,11],[91,1,36,11],[154,1,4,0]]],[1713409476,1,"Speed up rank tests",[[196,1,27,13],[230,1,7,3],[154,1,13,6]]],[1713611321,0,"Handle errors in logger docs",[[216,1,9,2]]],[1713740470,3,"Extend table handling",[[310,0,18,0]]],[1713967112,1,"Fix metrics tests",[[210,1,12,2]]],[1714077586,1,"Speed up teams docs",[[311,0,78,0],[312,0,47,0],[313,0,17,0]]],[1714226301,2,"Simplify cache docs",[[314,0,45,0],[183,1,33,18],[315,0,49,0],[285,1,2,5]]],[1714415518,2,"Tighten theme tests",[[209,2,0,30]]],[1714558169,1,"Document retry logic",[[67,1,8,6],[311,1,21,9]]],[1714735901,0,"Refactor session flow",[[165,2,0,171],[78,2,0,75]]],[1714828671,4,"Add users logic",[[316,0,63,0],[317,0,162,0]]],[1715020397,0,"Extend router docs",[[296,1,3,4],[169,1,9,30],[193,1,9,2]]],[1715167148,0,"Document batch logic",[[37,1,18,9],[219,1,39,28]]],[1715270655,1,"Fix router handling",[[169,1,45,20]]],[1715479431,4,"Extend stream handling",[[196,1,18,13],[318,0,18,0],[176,1,8,4],[319,0,23,0],[320,0,9,0]]],[1715675099,3,"Extend session tests",[[321,0,42,0]]],[1715818209,0,"Extend users handling",[[277,1,4,8]]],[1715951593,0,"Simplify render logic",[[254,1,54,33]]],[1716082423,1,"Fix retry logic",[[322,0,57,0],[323,0,42,0]]],[1716266662,1,"Rename router tests",[[133,1,24,33],[143,1,18,6],[152,1,4,3]]],[1716423403,4,"Test format flow",[[189,1,6,6],[264,1,6,21]]],[1716601313,0,"Simplify storage handling",[[8,1,15,4],[108,1,21,7]]],[1716704935,2,"Document parser tests",[[172,1,13,16]]],[1716915258,1,"Simplify chart tests",[[114,1,33,9],[47,1,54,5],[178,1,6,2]]],[1717055254,0,"Document render logic",[[324,0,141,0]]],[1717240651,1,"Speed up table tests",[[325,0,39,0],[326,0,135,0]]],[1717372056,3,"Rename users handling",[[327,0,3,0]]],[1717505611,2,"Clean up queue docs",[[328,0,36,0],[329,0,120,0],[330,0,69,0]]],[1717650670,0,"Document forms docs",[[331,0,3,0],[332,0,87,0],[333,0,24,0]]],[1717804382,0,"Extend schema handling",[[334,0,141,0],[335,0,16,0]]],[1717993273,0,"Simplify token tests",[[290,1,15,5]]],[1718102861,2,"Refactor token docs",[[82,1,42,18],[48,1,30,18],[184,1,8,7]]],[1718302134,3,"Fix theme docs",[[122,1,15,7]]],[1718458732,0,"Test tags logic",[[336,0,55,0],[337,0,8,0]]],[1718630615,1,"Rename rank flow",[[338,0,141,0]]],[1718749998,1,"Simplify schema handling",[[339,0,0,0],[189,1,16,6],[340,0,10,0],[341,0,42,0],[288,1,3,15],[280,1,9,18],[342,0,72,0],[316,1,18,10],[110,1,18,18],[48,1,53,9],[154,1,18,5]]],[1718947836,3,"Refactor events handling",[[343,0,55,0],[344,0,180,0],[345,0,59,0]]],[1719149596,0,"Handle errors in storage docs",[[346,0,36,0],[347,0,48,0],[229,1,45,17],[348,0,24,0],[175,1,39,15]]],[1719266492,2,"Handle errors in rank logic",[[349,0,81,0],[350,0,138,0],[351,0,20,0]]],[1719405132,0,"Simplify limits handling",[[352,0,147,0],[353,0,31,0],[354,0,44,0]]],[1719598692,1,"Handle errors in chart flow",[[149,1,10,8],[190,1,5,17],[256,1,3,9]]],[1719750223,4,"Fix metrics tests",[[355,0,0,0],[356,0,53,0],[357,0,36,0],[358,0,41,0],[303,1,54,13],[169,1,15,22],[191,1,54,14],[359,0,99,0]]],[1719885325,1,"Refactor queue flow",[[360,0,28,0]]],[1720014854,1,"Test index tests",[[361,0,20,0],[362,0,40,0]]],[1720228169,5,"Document parser tests",[[43,1,35,2],[350,1,24,27],[363,0,90,0]]],[1720336077,1,"Add stream flow",[[175,1,30,14],[241,1,2,8]]],[1720438415,3,"Speed up stream tests",[[364,0,0,0],[365,0,174,0],[345,1,5,9],[366,0,14,0],[246,1,12,8]]],[1720685623,2,"Handle errors in cache tests",[[4,1,13,8]]],[1720812894,2,"Extend cache logic",[[367,0,69,0],[368,0,51,0]]],[1720915391,3,"Refactor search docs",[[25,1,1,6],[369,0,60,0],[370,0,81,0],[371,0,132,0],[72,1,54,16]]],[1721169095,3,"Document theme handling",[[43,1,39,8],[264,1,48,6]]],[1721279428,3,"Test search flow",[[168,1,18,18]]],[1721471781,3,"Refactor index tests",[[372,0,23,0]]],[1721620115,3,"Document parser tests",[[373,0,0,0],[267,1,7,3],[374,0,114,0],[268,1,54,27],[375,0,50,0]]],[1721722053,5,"Rename metrics handling",[[81,1,14,7],[103,1,33,7],[126,1,27,18]]],[1721885886,3,"Refactor config flow",[[232,1,8,2]]],[1722067169,1,"Fix search docs",[[365,2,0,174]]],[1722235796,2,"Add render tests",[[376,0,147,0],[377,0,38,0],[378,0,60,0]]],[1722333139,5,"Add storage logic",[[120,1,15,23],[95,1,39,16]]],[1722488427,0,"Test logger docs",[[243,1,17,3],[273,1,13,10]]],[1722722321,1,"Speed up cache logic",[[304,1,4,1]]],[1722821605,0,"Document chart docs",[[379,0,1,0],[380,0,0,0],[275,1,17,3],[172,1,15,6],[148,1,1,5],[381,0,168,0],[382,0,60,0],[271,1,18,26],[383,0,54,0],[72,1,32,21],[24,1,51,11]]],[1723028824,3,"Rename storage handling",[[127,1,33,4],[269,1,13,8]]],[1723111278,0,"Simplify render docs",[[384,0,0,0],[385,0,30,0],[386,0,16,0]]],[1723288021,1,"Handle errors in metrics flow",[[1,1,6,4],[103,1,42,7],[318,1,33,3]]],[1723503686,3,"Clean up limits tests",[[384,1,0,0],[149,1,8,8],[66,1,15,3],[138,1,12,3],[8,1,18,10],[282,1,48,21],[137,1,21,24],[387,0,33,0],[201,1,12,1],[388,0,78,0],[291,1,30,4],[389,0,114,0],[359,1,79,27],[390,0,32,0],[198,1,12,2],[391,0,22,0],[270,1,17,10]]],[1723603620,1,"Rename token logic",[[217,1,45,19],[125,1,3,14],[191,1,3,14]]],[1723765979,3,"Speed up storage flow",[[392,0,0,0],[52,1,1,12],[37,1,1,4],[199,1,16,5],[111,1,4,3],[360,1,17,2],[356,1,11,4],[174,1,15,9],[10,1,15,27],[393,0,36,0],[249,1,51,16],[394,0,126,0],[371,1,11,24],[395,0,144,0],[254,1,18,24],[396,0,96,0],[397,0,171,0],[257,1,24,16],[398,0,46,0],[399,0,44,0]]],[1723983214,0,"Handle errors in index docs",[[400,0,6,0],[401,0,60,0],[402,0,105,0]]],[1724140887,0,"Simplify stream logic",[[403,0,0,0],[404,0,10,0],[405,0,30,0]]],[1724207128,0,"Document import docs",[[50,1,6,17],[203,1,30,21],[406,0,60,0]]],[1724412456,0,"Clean up search handling",[[407,0,60,0]]],[1724549942,5,"Speed up client flow",[[280,1,27,8],[408,0,84,0],[409,0,114,0],[410,0,33,0],[192,1,7,8]]],[1724695989,5,"Fix storage flow",[[411,0,60,0],[412,0,153,0],[413,0,168,0]]],[1724871409,0,"Clean up stream docs",[[65,1,3,25],[29,1,21,22],[414,0,117,0],[415,0,21,0],[281,1,8,19],[371,1,45,21],[412,1,17,25],[254,1,33,27],[64,1,23,20],[416,0,10,0]]],[1725090601,0,"Rename metrics tests",[[25,2,0,31],[370,2,0,81]]],[1725226776,4,"Refactor parser docs",[[417,0,37,0],[418,0,55,0],[419,0,39,0]]],[1725325878,2,"Refactor forms docs",[[318,1,15,10]]],[1725477603,0,"Add chart flow",[[420,0,6,0],[421,0,165,0]]],[1725649445,3,"Fix metrics tests",[[422,0,1,0],[423,0,27,0]]],[1725817236,1,"Document search handling",[[356,1,9,14],[36,1,18,18],[139,1,21,18]]],[1725979222,1,"Document storage flow",[[424,0,45,0]]],[1726193265,5,"Tighten limits tests",[[293,1,48,15]]],[1726357240,2,"Handle errors in table tests",[[400,1,17,0],[207,1,24,0],[231,1,15,18]]],[1726514847,1,"Document schema logic",[[211,1,5,9]]],[1726603495,2,"Tighten export flow",[[298,1,38,24]]],[1726817177,3,"Speed up client handling",[[216,1,6,3],[323,1,39,5]]],[1726937409,3,"Simplify worker flow",[[327,1,1,3],[337,1,4,3]]],[1727073524,2,"Speed up schema tests",[[418,1,18,9],[112,1,39,23],[425,0,138,0]]],[1727262803,0,"Clean up rank handling",[[426,0,17,0],[427,0,21,0]]],[1727403236,1,"Rename queue flow",[[287,1,54,23]]],[1727598857,2,"Fix client tests",[[100,1,16,12]]],[1727745613,5,"Speed up forms docs",[[428,0,36,0]]],[1727893176,0,"Speed up search handling",[[8,2,0,60]]],[1727957667,1,"Document table handling",[[429,0,40,0],[430,0,7,0]]],[1728185098,1,"Simplify queue flow",[[431,0,147,0],[265,1,23,19],[432,0,144,0],[333,1,38,0]]],[1728399672,2,"Rename theme logic",[[433,0,1,0],[434,0,21,0],[182,1,53,25],[93,1,27,15],[20,1,5,21],[435,0,105,0],[436,0,60,0],[437,0,177,0],[438,0,171,0],[36,1,24,18],[117,1,12,19],[439,0,63,0],[60,1,27,27],[372,1,5,2]]],[1728527792,5,"Handle errors in search tests",[[373,2,0,0],[41,2,0,164]]],[1728608392,1,"Extend search handling",[[382,1,14,8]]],[1728763615,2,"Clean up client docs",[[440,0,1,0],[75,1,2,8],[101,1,5,12],[189,1,10,9],[441,0,45,0],[325,1,18,6],[442,0,57,0],[443,0,129,0],[444,0,135,0],[445,0,159,0],[302,1,24,11],[446,0,99,0],[447,0,81,0],[269,1,12,14],[448,0,51,0],[273,1,1,12],[399,1,11,6]]],[1729009332,3,"Test users docs",[[138,1,4,5],[254,1,39,29],[3,1,27,18]]],[1729129346,1,"Document format tests",[[429,1,6,2]]],[1729316053,3,"Handle errors in forms flow",[[174,1,27,9],[419,1,45,7],[283,1,21,7]]],[1729461960,3,"Clean up table docs",[[13,1,21,20],[184,1,15,7]]],[1729634470,0,"Rename config handling",[[449,0,0,0],[450,0,49,0],[38,1,13,10],[358,1,14,9],[174,1,27,17],[451,0,147,0],[452,0,99,0],[453,0,75,0],[454,0,39,0],[455,0,30,0],[456,0,120,0],[109,1,15,9],[124,1,42,21],[3,1,39,27],[35,1,48,25],[457,0,25,0],[273,1,2,6],[399,1,3,5]]],[1729757109,0,"Speed up filters flow",[[291,1,45,11],[56,1,3,14]]],[1729868997,0,"Extend forms logic",[[458,0,1,0],[459,0,20,0],[460,0,50,0]]],[1730047884,0,"Clean up render docs",[[381,1,14,23]]],[1730214588,5,"Clean up search docs",[[122,1,48,12],[461,0,18,0],[256,1,3,8]]],[1730415776,4,"Document table flow",[[214,1,36,6]]],[1730495163,2,"Handle errors in export flow",[[284,1,21,13]]],[1730684225,3,"Speed up worker flow",[[462,0,59,0],[463,0,165,0]]],[1730896043,1,"Extend export docs",[[417,1,3,6]]],[1731009531,5,"Simplify import flow",[[449,1,0,0]]],[1731156338,4,"Fix metrics docs",[[464,0,33,0],[465,0,56,0],[466,0,9,0]]],[1731299519,0,"Document config logic",[[355,1,0,0],[66,1,3,3],[289,1,24,6]]],[1731464135,1,"Add export docs",[[467,0,0,0],[468,0,54,0],[469,0,141,0]]],[1731675303,1,"Add index flow",[[470,0,114,0]]],[1731754031,4,"Speed up events docs",[[471,0,0,0],[472,0,159,0],[473,0,63,0]]],[1731934492,4,"Speed up format docs",[[0,1,7,6],[223,1,10,5],[96,1,15,6]]],[1732085474,2,"Document render logic",[[474,0,12,0],[475,0,48,0],[476,0,126,0]]],[1732266275,4,"Handle errors in metrics handling",[[477,0,108,0]]],[1732429821,0,"Extend index logic",[[478,0,21,0]]],[1732535150,0,"Test users flow",[[479,0,30,0]]],[1732752115,0,"Test events tests",[[480,0,57,0]]],[1732842660,0,"Document cache flow",[[481,0,38,0],[482,0,168,0],[483,0,14,0]]],[1733056912,2,"Refactor layout tests",[[349,1,36,13],[414,1,27,17],[105,1,27,24]]],[1733210402,4,"Tighten rank handling",[[195,1,7,10],[118,1,26,20],[121,1,5,22],[207,1,24,9],[213,1,73,21],[229,1,42,24],[484,0,57,0],[299,1,33,20],[169,1,54,19],[315,1,16,6],[485,0,57,0],[486,0,46,0]]],[1733337530,1,"Test index handling",[[261,1,51,23],[169,1,21,23],[150,1,51,17]]],[1733522304,1,"Clean up rank logic",[[487,0,60,0],[488,0,69,0]]],[1733705400,5,"Tighten filters logic",[[274,2,0,63]]],[1733785332,1,"Rename rank tests",[[40,1,2,25]]],[1733936981,3,"Tighten chart docs",[[489,0,54,0]]],[1734140293,1,"Speed up chart tests",[[30,1,33,23],[92,1,36,8],[366,1,5,4]]],[1734334227,3,"Clean up stream handling",[[233,1,9,4]]],[1734460313,1,"Test config flow",[[376,1,11,22],[122,1,30,12],[24,1,3,26]]],[1734576485,0,"Extend metrics tests",[[490,0,75,0]]],[1734711100,4,"Extend layout handling",[[449,1,0,0],[491,0,0,0],[28,1,6,5],[429,1,11,7],[147,1,27,20],[431,1,15,24],[492,0,135,0],[493,0,117,0],[494,0,108,0],[316,1,33,9],[306,1,39,26],[495,0,63,0],[105,1,18,16]]],[1734899029,2,"Add retry docs",[[317,1,48,26]]],[1735064409,2,"Clean up events handling",[[205,1,50,14],[293,1,36,28],[383,1,15,13]]],[1735189766,3,"Tighten session handling",[[496,0,2,0],[497,0,1,0],[498,0,60,0]]],[1735428456,4,"Test theme tests",[[499,0,177,0],[500,0,57,0]]],[1735526075,1,"Document teams docs",[[319,1,9,3]]],[1735741870,3,"Document render docs",[[493,1,9,18],[318,1,35,7],[273,1,14,9]]],[1735861929,3,"Add users handling",[[299,1,6,22],[398,1,14,2],[273,1,1,6]]],[1736007930,3,"Refactor token handling",[[501,0,2,0],[502,0,56,0],[425,1,27,20],[503,0,39,0],[238,1,14,4]]],[1736200600,2,"Add cache logic",[[454,1,54,4],[396,1,18,16],[258,1,14,1]]],[1736355388,4,"Refactor session docs",[[85,1,3,8],[402,1,18,18],[351,1,12,2]]],[1736429830,0,"Fix table logic",[[291,2,0,78]]],[1736682155,4,"Tighten logger logic",[[1,1,8,4]]],[1736795120,3,"Test batch docs",[[311,1,3,13],[170,1,5,1]]],[1736977457,0,"Extend batch docs",[[49,1,5,7],[206,1,15,4],[48,1,11,18]]],[1737172039,5,"Test index flow",[[504,0,3,0],[505,0,57,0],[506,0,78,0]]],[1737272590,0,"Add limits docs",[[507,0,42,0]]],[1737390395,2,"Document config handling",[[433,1,1,1],[172,1,15,10],[46,1,18,23]]],[1737628529,2,"Tighten queue logic",[[508,0,27,0],[149,1,11,11],[279,1,5,9],[509,0,32,0],[510,0,50,0],[511,0,7,0],[512,0,72,0],[513,0,60,0],[514,0,156,0],[419,1,51,16],[515,0,45,0],[3,1,50,26],[139,1,15,21],[426,1,7,2],[385,1,5,3],[516,0,39,0],[517,0,23,0]]],[1737721417,5,"Test queue logic",[[128,1,4,7],[231,1,41,17],[426,1,4,2]]],[1737932008,5,"Speed up queue tests",[[518,0,0,0],[519,0,43,0]]],[1738041761,4,"Tighten search tests",[[121,1,3,24],[232,1,14,2]]],[1738234231,3,"Fix batch logic",[[520,0,111,0],[521,0,111,0],[522,0,34,0]]],[1738417104,3,"Add tags handling",[[523,0,33,0]]],[1738503978,0,"Rename client handling",[[497,1,0,0],[134,1,36,7],[524,0,132,0],[525,0,18,0],[526,0,20,0]]],[1738694847,1,"Refactor storage logic",[[515,1,18,7]]],[1738890831,0,"Refactor storage docs",[[132,2,0,104]]],[1739043510,0,"Clean up rank tests",[[263,1,42,15]]]]}</script>
+<script>(() => {
+"use strict";
+
+/* ------------------------------------------------------------------ data */
+const D = JSON.parse(document.getElementById("replay-data").textContent);
+const CFG = JSON.parse(document.getElementById("replay-config").textContent);
+const N = D.commits.length;
+const $ = (id) => document.getElementById(id);
+const canvas = $("stage");
+const ctx = canvas.getContext("2d");
+const FONT = getComputedStyle(document.body).fontFamily;
+const TAU = Math.PI * 2;
+const GOLDEN = 2.399963229728653;
+const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
+
+const fmtDate = new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
+const fmtInt = new Intl.NumberFormat("en-US");
+const fmtCompact = new Intl.NumberFormat("en-US", { notation: "compact", maximumFractionDigits: 1 });
+
+/* ------------------------------------------------------------- languages */
+const LANGS = [
+  ["JavaScript", "#E9B949", ["js", "mjs", "cjs", "jsx"]],
+  ["TypeScript", "#4C9BE0", ["ts", "tsx", "mts", "cts"]],
+  ["Python", "#58B894", ["py", "pyi", "ipynb"]],
+  ["Go", "#5FCFE0", ["go"]],
+  ["Rust", "#E2774B", ["rs"]],
+  ["Java and Kotlin", "#D9697A", ["java", "kt", "kts", "scala", "groovy"]],
+  ["C and C++", "#9C8BE3", ["c", "h", "cc", "cpp", "hpp", "cxx", "hh", "m", "mm"]],
+  ["C# and .NET", "#7DB25E", ["cs", "fs", "vb", "csproj"]],
+  ["Ruby and PHP", "#DE6B8F", ["rb", "php", "erb", "rake"]],
+  ["Swift and Dart", "#F0925A", ["swift", "dart"]],
+  ["Shell", "#B3C27E", ["sh", "bash", "zsh", "fish", "ps1", "bat", "cmd"]],
+  ["HTML and templates", "#EE8A52", ["html", "htm", "vue", "svelte", "hbs", "ejs", "jinja", "j2", "twig"]],
+  ["CSS", "#B57FD6", ["css", "scss", "sass", "less", "styl"]],
+  ["Docs", "#8FA5BA", ["md", "mdx", "rst", "txt", "adoc"]],
+  ["Config and data", "#CDB88A", ["json", "yml", "yaml", "toml", "ini", "cfg", "xml", "csv", "lock", "env", "conf"]],
+  ["Images and media", "#D78CBE", ["png", "jpg", "jpeg", "gif", "svg", "webp", "ico", "mp4", "mp3", "woff", "woff2", "ttf", "pdf"]],
+  ["Other", "#6F7F8F", []],
+];
+const OTHER = LANGS.length - 1;
+const LANG_BY_EXT = Object.create(null);
+LANGS.forEach((l, i) => l[2].forEach((e) => { LANG_BY_EXT[e] = i; }));
+const extOf = (name) => {
+  const base = name.slice(name.lastIndexOf("/") + 1).toLowerCase();
+  if (base === "dockerfile" || base === "makefile") return "sh";
+  const dot = base.lastIndexOf(".");
+  return dot > 0 ? base.slice(dot + 1) : "";
+};
+
+/* ------------------------------------------------------------------ tree */
+const FILE_STEP = 4.4;
+const dirs = [];
+const newDir = (name, parent) => ({
+  name, parent, depth: parent ? parent.depth + 1 : 0, kids: new Map(), kidList: [], files: [],
+  total: 0, alive: 0, own: 0, r: 8, x: 0, y: 0, hx: 0, hy: 0, angle: 0,
+});
+const root = newDir("", null);
+const maxDepth = D.maxDepth || 99;
+
+const files = D.files.map((p, i) => {
+  const segs = p.split("/");
+  const nd = Math.min(segs.length - 1, maxDepth);
+  let d = root;
+  for (let k = 0; k < nd; k++) {
+    let c = d.kids.get(segs[k]);
+    if (!c) { c = newDir(segs[k], d); d.kids.set(segs[k], c); }
+    d = c;
+  }
+  const name = segs.slice(nd).join("/");
+  const lang = LANG_BY_EXT[extOf(name)] ?? OTHER;
+  const f = { i, path: p, name, dir: d, lang, alive: false, heat: 0, pop: 1, born: Infinity, x: 0, y: 0 };
+  d.files.push(f);
+  return f;
+});
+
+D.commits.forEach((c, ci) => {
+  for (const ch of c[3]) { const f = files[ch[0]]; if (ci < f.born) f.born = ci; }
+});
+
+(function walk(d) {
+  dirs.push(d);
+  d.files.sort((a, b) => a.born - b.born || a.i - b.i);
+  d.total = d.files.length;
+  d.r = 8 + FILE_STEP * Math.sqrt(d.files.length);
+  d.kidList = [...d.kids.values()].sort((a, b) => (a.name < b.name ? -1 : 1));
+  for (const c of d.kidList) { walk(c); d.total += c.total; }
+})(root);
+
+function layoutTree() {
+  const deepest = dirs.reduce((m, d) => Math.max(m, d.depth), 0);
+  const ringMax = new Array(deepest + 1).fill(0);
+  let maxRad = 0;
+  for (const d of dirs) { ringMax[d.depth] = Math.max(ringMax[d.depth], d.r); maxRad = Math.max(maxRad, d.r); }
+  const radii = [0];
+  for (let k = 1; k <= deepest; k++) radii[k] = radii[k - 1] + ringMax[k - 1] + ringMax[k] + 46;
+
+  const place = (d, a0, a1) => {
+    d.angle = (a0 + a1) / 2;
+    const R = radii[d.depth];
+    d.hx = d.x = Math.cos(d.angle) * R;
+    d.hy = d.y = Math.sin(d.angle) * R;
+    const kids = d.kidList;
+    if (!kids.length) return;
+    const w = kids.map((k) => Math.sqrt(k.total) + 0.8);
+    const sum = w.reduce((a, b) => a + b, 0);
+    let a = a0;
+    kids.forEach((k, i) => { const span = ((a1 - a0) * w[i]) / sum; place(k, a, a + span); a += span; });
+  };
+  place(root, 0, TAU);
+
+  // Nudge overlapping folders apart; a spring keeps each near its sector.
+  const n = dirs.length;
+  if (n > 1) {
+    const iters = n > 1500 ? 25 : n > 600 ? 50 : 90;
+    const pad = 14;
+    const cell = 2 * maxRad + pad;
+    dirs.forEach((d, i) => { d.id = i; });
+    for (let it = 0; it < iters; it++) {
+      const grid = new Map();
+      for (const d of dirs) {
+        const key = Math.floor(d.x / cell) * 100003 + Math.floor(d.y / cell);
+        (grid.get(key) || grid.set(key, []).get(key)).push(d);
+      }
+      for (const d of dirs) {
+        const cx = Math.floor(d.x / cell), cy = Math.floor(d.y / cell);
+        for (let ox = -1; ox <= 1; ox++) for (let oy = -1; oy <= 1; oy++) {
+          const bucket = grid.get((cx + ox) * 100003 + (cy + oy));
+          if (!bucket) continue;
+          for (const e of bucket) {
+            if (e.id <= d.id) continue;
+            let dx = e.x - d.x, dy = e.y - d.y;
+            let dist = Math.hypot(dx, dy);
+            const min = d.r + e.r + pad;
+            if (dist >= min) continue;
+            if (dist < 1e-6) { dx = Math.cos(d.id); dy = Math.sin(d.id); dist = 1; }
+            const push = ((min - dist) / 2) * 0.5;
+            const ux = dx / dist, uy = dy / dist;
+            d.x -= ux * push; d.y -= uy * push; e.x += ux * push; e.y += uy * push;
+          }
+        }
+      }
+      for (const d of dirs) { d.x += (d.hx - d.x) * 0.02; d.y += (d.hy - d.y) * 0.02; }
+    }
+  }
+
+  for (const d of dirs) {
+    d.files.forEach((f, k) => {
+      const rr = FILE_STEP * Math.sqrt(k + 0.6);
+      const ang = k * GOLDEN + d.angle;
+      f.x = d.x + Math.cos(ang) * rr;
+      f.y = d.y + Math.sin(ang) * rr;
+    });
+  }
+}
+layoutTree();
+
+/* --------------------------------------------------------------- authors */
+const initials = (name) => {
+  const parts = name.trim().split(/\s+/).filter(Boolean);
+  return ((parts[0] || "?")[0] + (parts.length > 1 ? parts[parts.length - 1][0] : "")).toUpperCase();
+};
+const authors = D.authors.map((name, i) => ({
+  i, name, tag: initials(name), color: `hsl(${Math.round((i * 137.508) % 360)} 68% 68%)`,
+  x: 0, y: 0, tx: 0, ty: 0, a: 0, seen: false, last: -1e9, commits: 0,
+}));
+
+/* ------------------------------------------------------------ growth data */
+const growth = new Float32Array(N + 1);
+(function () {
+  const alive = new Uint8Array(files.length);
+  let count = 0, lines = 0;
+  for (let i = 0; i < N; i++) {
+    for (const ch of D.commits[i][3]) {
+      if (ch[1] === 2) { if (alive[ch[0]]) { alive[ch[0]] = 0; count--; } }
+      else if (!alive[ch[0]]) { alive[ch[0]] = 1; count++; }
+      lines += ch[2] - ch[3];
+    }
+    growth[i + 1] = D.hasLines ? Math.max(lines, 0) : count;
+  }
+})();
+const growthMax = growth.reduce((m, v) => Math.max(m, v), 1);
+
+const yearTicks = (function () {
+  const out = [];
+  let last = -1;
+  D.commits.forEach((c, i) => {
+    const y = new Date(c[0] * 1000).getUTCFullYear();
+    if (y !== last) { out.push({ i, label: String(y) }); last = y; }
+  });
+  const keep = Math.ceil(out.length / 9);
+  return out.filter((_, k) => k % keep === 0);
+})();
+
+/* ----------------------------------------------------------------- state */
+let idx = 0, acc = 0, playing = false, speedMul = 1;
+let showLabels = true, panelOpen = false, recording = null;
+let pendingSeek = null, clock = 0, endedAt = 0, lastSpark = -1, lastPanel = -1e9;
+let dirty = true;
+let commitsDone = 0, aliveCount = 0, linesAdded = 0, linesDeleted = 0;
+let current = null;
+const langCount = new Array(LANGS.length).fill(0);
+const hot = new Set();
+const beams = [];
+const fx = [];
+const rate = clamp(N / 45, 1.5, 60); // whole replay takes about 45 s at 1x
+
+function setAlive(f, v) {
+  if (f.alive === v) return;
+  f.alive = v;
+  const step = v ? 1 : -1;
+  aliveCount += step;
+  langCount[f.lang] += step;
+  for (let d = f.dir; d; d = d.parent) d.alive += step;
+  f.dir.own += step;
+}
+
+function resetState() {
+  for (const f of files) { f.alive = false; f.heat = 0; f.pop = 1; }
+  for (const d of dirs) { d.alive = 0; d.own = 0; }
+  aliveCount = 0; commitsDone = 0; linesAdded = 0; linesDeleted = 0;
+  langCount.fill(0); hot.clear(); beams.length = 0; fx.length = 0; current = null;
+  for (const a of authors) { a.commits = 0; a.seen = false; a.a = 0; a.last = -1e9; }
+}
+
+function applyCommit(i, silent) {
+  dirty = true;
+  const c = D.commits[i];
+  const au = authors[c[1]];
+  const weight = c[4] || 1;
+  au.commits += weight;
+  commitsDone += weight;
+  let sx = 0, sy = 0, n = 0;
+  for (const ch of c[3]) {
+    const f = files[ch[0]];
+    if (ch[1] === 2) {
+      if (f.alive) {
+        setAlive(f, false);
+        if (!silent && fx.length < 300) fx.push({ x: f.x, y: f.y, t: 0, color: LANGS[f.lang][1] });
+      }
+    } else if (!f.alive) {
+      setAlive(f, true);
+      if (!silent) { f.pop = 0; f.heat = 1; hot.add(f); }
+    } else if (!silent) {
+      f.heat = 1; hot.add(f);
+    }
+    linesAdded += ch[2]; linesDeleted += ch[3];
+    if (!silent) { sx += f.x; sy += f.y; n++; }
+  }
+  current = { msg: c[2], au, ts: c[0] };
+  if (silent || !n) return;
+  au.tx = sx / n; au.ty = sy / n; au.last = clock;
+  if (!au.seen) { au.x = au.tx; au.y = au.ty; au.seen = true; }
+  const stride = Math.max(1, Math.ceil(c[3].length / 10));
+  for (let k = 0; k < c[3].length; k += stride) {
+    beams.push({ au, f: files[c[3][k][0]], t: 1 });
+  }
+  if (beams.length > 160) beams.splice(0, beams.length - 160);
+}
+
+function seek(target) {
+  dirty = true;
+  target = clamp(Math.round(target), 0, N);
+  if (target < idx) { resetState(); idx = 0; }
+  while (idx < target) applyCommit(idx++, true);
+  acc = 0;
+  if (idx === 0) current = null;
+  fitCamera(true);
+}
+
+/* ---------------------------------------------------------------- camera */
+const cam = { x: 0, y: 0, z: 0.6, tx: 0, ty: 0, tz: 0.6, auto: true };
+let W = 0, H = 0, dpr = 1, dprCap = 2;
+const region = () => {
+  const clean = !!recording || document.body.classList.contains("recording"); // controls hidden: use the room
+  const right = panelOpen && W > 760 && !clean ? 278 : 24;
+  return { l: 24, r: W - right, t: 84, b: Math.max(H - (clean ? 128 : 176), 160) };
+};
+const toScreen = (x, y) => {
+  const r = region();
+  return [(x - cam.x) * cam.z + (r.l + r.r) / 2, (y - cam.y) * cam.z + (r.t + r.b) / 2];
+};
+const toWorld = (sx, sy) => {
+  const r = region();
+  return [(sx - (r.l + r.r) / 2) / cam.z + cam.x, (sy - (r.t + r.b) / 2) / cam.z + cam.y];
+};
+
+function fitCamera(snap) {
+  let x0 = Infinity, y0 = Infinity, x1 = -Infinity, y1 = -Infinity;
+  for (const d of dirs) {
+    if (d.alive <= 0) continue;
+    const r = d.own > 0 ? FILE_STEP * Math.sqrt(d.own + 1) + 8 : 6;
+    x0 = Math.min(x0, d.x - r); x1 = Math.max(x1, d.x + r);
+    y0 = Math.min(y0, d.y - r); y1 = Math.max(y1, d.y + r);
+  }
+  if (!isFinite(x0)) return;
+  const r = region();
+  const w = Math.max(x1 - x0, 60) + 80, h = Math.max(y1 - y0, 60) + 80;
+  cam.tz = clamp(Math.min((r.r - r.l) / w, (r.b - r.t) / h), 0.03, 1.6);
+  cam.tx = (x0 + x1) / 2; cam.ty = (y0 + y1) / 2;
+  if (snap) { cam.x = cam.tx; cam.y = cam.ty; cam.z = cam.tz; }
+}
+
+/* ------------------------------------------------------------- rendering */
+const byLang = LANGS.map(() => []);
+
+function update(dt) {
+  if (cam.auto) {
+    fitCamera(false);
+    const k = 1 - Math.exp(-dt * 1.8);
+    cam.x += (cam.tx - cam.x) * k; cam.y += (cam.ty - cam.y) * k;
+    cam.z = Math.exp(Math.log(cam.z) + (Math.log(cam.tz) - Math.log(cam.z)) * k);
+  }
+  for (const f of hot) {
+    f.heat = Math.max(0, f.heat - dt * 0.8);
+    if (f.pop < 1) f.pop = Math.min(1, f.pop + dt * 3.5);
+    if (f.heat <= 0.005 && f.pop >= 1) { f.heat = 0; hot.delete(f); }
+  }
+  for (let i = beams.length - 1; i >= 0; i--) { beams[i].t -= dt * 1.7; if (beams[i].t <= 0) beams.splice(i, 1); }
+  for (let i = fx.length - 1; i >= 0; i--) { fx[i].t += dt * 1.6; if (fx[i].t >= 1) fx.splice(i, 1); }
+  const ka = 1 - Math.exp(-dt * 4);
+  for (const a of authors) {
+    if (!a.seen) continue;
+    a.x += (a.tx - a.x) * ka; a.y += (a.ty - a.y) * ka;
+    a.a += ((clock - a.last < 3.2 ? 1 : 0) - a.a) * (1 - Math.exp(-dt * 3));
+  }
+}
+
+function text(str, x, y, size, color, weight, align) {
+  ctx.font = `${weight || 400} ${size}px ${FONT}`;
+  ctx.textAlign = align || "left";
+  ctx.lineWidth = 4; ctx.lineJoin = "round";
+  ctx.strokeStyle = "rgba(10,17,24,0.85)";
+  ctx.strokeText(str, x, y);
+  ctx.fillStyle = color;
+  ctx.fillText(str, x, y);
+}
+
+function fitText(str, maxW, size, weight) {
+  ctx.font = `${weight || 400} ${size}px ${FONT}`;
+  if (ctx.measureText(str).width <= maxW) return str;
+  let s = str;
+  while (s.length > 4 && ctx.measureText(s + "\u2026").width > maxW) s = s.slice(0, -1);
+  return s + "\u2026";
+}
+
+function draw() {
+  // background
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  ctx.globalCompositeOperation = "source-over";
+  ctx.globalAlpha = 1;
+  const g = ctx.createRadialGradient(W / 2, H * 0.45, 0, W / 2, H * 0.45, Math.max(W, H) * 0.75);
+  g.addColorStop(0, "#14212c"); g.addColorStop(1, "#080d13");
+  ctx.fillStyle = g;
+  ctx.fillRect(0, 0, W, H);
+  if (!N) return;
+
+  // world space
+  const r = region();
+  const cx = (r.l + r.r) / 2, cy = (r.t + r.b) / 2;
+  ctx.setTransform(dpr * cam.z, 0, 0, dpr * cam.z, dpr * (cx - cam.x * cam.z), dpr * (cy - cam.y * cam.z));
+  const z = cam.z;
+  const px = 1 / z;
+
+  ctx.lineWidth = 1.2 * px;
+  ctx.strokeStyle = "rgba(150,185,215,0.2)";
+  ctx.beginPath();
+  for (const d of dirs) {
+    if (!d.parent || d.alive <= 0) continue;
+    const p = d.parent;
+    ctx.moveTo(p.x, p.y);
+    ctx.quadraticCurveTo((p.x + d.x) / 2 + (d.y - p.y) * 0.1, (p.y + d.y) / 2 - (d.x - p.x) * 0.1, d.x, d.y);
+  }
+  ctx.stroke();
+
+  ctx.strokeStyle = "rgba(150,185,215,0.5)";
+  ctx.beginPath();
+  for (const f of hot) {
+    if (!f.alive || f.heat < 0.05) continue;
+    ctx.moveTo(f.dir.x, f.dir.y); ctx.lineTo(f.x, f.y);
+  }
+  ctx.stroke();
+
+  ctx.fillStyle = "rgba(190,215,235,0.55)";
+  ctx.beginPath();
+  for (const d of dirs) {
+    if (d.alive <= 0) continue;
+    const rad = Math.max(2.4, 3 * px);
+    ctx.moveTo(d.x + rad, d.y); ctx.arc(d.x, d.y, rad, 0, TAU);
+  }
+  ctx.fill();
+
+  for (const arr of byLang) arr.length = 0;
+  for (const f of files) if (f.alive && f.heat === 0) byLang[f.lang].push(f);
+  const fr = Math.max(2.1, 1.3 * px);
+  ctx.globalAlpha = 0.9;
+  for (let L = 0; L < LANGS.length; L++) {
+    const arr = byLang[L];
+    if (!arr.length) continue;
+    ctx.fillStyle = LANGS[L][1];
+    ctx.beginPath();
+    if (fr * z < 1.1 || (aliveCount > 4000 && fr * z < 2.2)) { // tiny or crowded: squares are far cheaper and read the same
+      const side = fr * 2;
+      for (const f of arr) ctx.rect(f.x - fr, f.y - fr, side, side);
+    } else {
+      for (const f of arr) { ctx.moveTo(f.x + fr, f.y); ctx.arc(f.x, f.y, fr, 0, TAU); }
+    }
+    ctx.fill();
+  }
+  ctx.globalAlpha = 1;
+
+  ctx.globalCompositeOperation = "lighter";
+  for (const f of hot) {
+    if (!f.alive) continue;
+    const col = LANGS[f.lang][1];
+    const grow = f.pop < 1 ? 0.35 + 0.65 * f.pop + Math.sin(f.pop * Math.PI) * 0.5 : 1;
+    ctx.globalAlpha = 0.22 * f.heat;
+    ctx.fillStyle = col;
+    ctx.beginPath(); ctx.arc(f.x, f.y, fr * (3 + 6 * f.heat), 0, TAU); ctx.fill();
+    ctx.globalAlpha = 0.95;
+    ctx.beginPath(); ctx.arc(f.x, f.y, fr * grow * (1 + f.heat * 0.9), 0, TAU); ctx.fill();
+    ctx.globalAlpha = 0.36 * f.heat;
+    ctx.fillStyle = "#fff";
+    ctx.beginPath(); ctx.arc(f.x, f.y, fr * 0.8 * grow, 0, TAU); ctx.fill();
+  }
+  ctx.globalAlpha = 1;
+
+  for (const e of fx) {
+    ctx.globalAlpha = (1 - e.t) * 0.8;
+    ctx.strokeStyle = "#ff8f8f";
+    ctx.lineWidth = 1.6 * px;
+    ctx.beginPath(); ctx.arc(e.x, e.y, fr * (1.5 + e.t * 7), 0, TAU); ctx.stroke();
+  }
+
+  for (const b of beams) {
+    if (!b.au.seen || !b.f.alive) continue;
+    ctx.globalAlpha = clamp(b.t, 0, 1) * 0.55;
+    ctx.strokeStyle = b.au.color;
+    ctx.lineWidth = 1.3 * px;
+    ctx.beginPath(); ctx.moveTo(b.au.x, b.au.y); ctx.lineTo(b.f.x, b.f.y); ctx.stroke();
+  }
+  ctx.globalAlpha = 1;
+  ctx.globalCompositeOperation = "source-over";
+
+  // screen space
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  ctx.textBaseline = "alphabetic";
+
+  if (showLabels) {
+    let shown = 0;
+    for (const d of dirs) {
+      if (!d.parent || d.alive < 2 || shown > 140) continue;
+      if (d.depth > 1 && d.r * z < 14) continue;
+      const [sx, sy] = toScreen(d.x, d.y);
+      if (sx < -80 || sx > W + 80 || sy < -40 || sy > H + 40) continue;
+      shown++;
+      text(d.name, sx, sy - Math.max(8, d.r * z * 0.55) - 4, 11, "rgba(214,226,238,0.82)", 500, "center");
+    }
+  }
+
+  for (const a of authors) {
+    if (!a.seen || a.a < 0.03) continue;
+    const [sx, sy] = toScreen(a.x, a.y);
+    ctx.globalAlpha = a.a;
+    ctx.fillStyle = "rgba(10,17,24,0.9)";
+    ctx.beginPath(); ctx.arc(sx, sy, 12, 0, TAU); ctx.fill();
+    ctx.strokeStyle = a.color; ctx.lineWidth = 2; ctx.stroke();
+    ctx.fillStyle = a.color;
+    ctx.font = `600 10px ${FONT}`; ctx.textAlign = "center";
+    ctx.fillText(a.tag, sx, sy + 3.5);
+    if (showLabels) text(a.name, sx, sy + 26, 11, a.color, 500, "center");
+  }
+  ctx.globalAlpha = 1;
+
+  drawHud();
+}
+
+function drawHud() {
+  text(D.repo, 24, 38, 22, "#eef4fa", 600);
+  const who = D.authors.length === 1 ? "1 contributor" : `${fmtInt.format(D.authors.length)} contributors`;
+  text(`${fmtInt.format(D.totalCommits)} commits by ${who}`, 24, 59, 13, "#8a9bab", 400);
+  if (CFG.watermark) text("made with repo-replay", W - 24, 38, 12, "rgba(160,180,200,0.5)", 400, "right");
+
+  const ts = current ? current.ts : D.commits[0][0];
+  const baseY = H - 76 - 52;
+  text(fmtDate.format(new Date(ts * 1000)), 24, baseY, 38, "#f3ebdd", 300);
+  if (current) {
+    const line = `${current.au.name}: ${current.msg}`;
+    const shownText = fitText(line, Math.min(W * 0.55, 620), 14, 400);
+    ctx.fillStyle = current.au.color;
+    ctx.beginPath(); ctx.arc(30, baseY + 22, 4, 0, TAU); ctx.fill();
+    text(shownText, 42, baseY + 27, 14, "#c3d0dc", 400);
+  }
+
+  if (!panelOpen || recording) {
+    const rows = [];
+    for (let L = 0; L < LANGS.length; L++) if (langCount[L] > 0) rows.push(L);
+    rows.sort((a, b) => langCount[b] - langCount[a]);
+    const shown = rows.slice(0, 7);
+    let y = H - 76 - 26 - (shown.length - 1) * 20; // largest language on top
+    ctx.textAlign = "right";
+    for (const L of shown) {
+      const label = `${LANGS[L][0]}  ${fmtInt.format(langCount[L])}`;
+      text(label, W - 24, y, 12, "#b4c3d1", 400, "right");
+      const tw = ctx.measureText(label).width;
+      ctx.fillStyle = LANGS[L][1];
+      ctx.beginPath(); ctx.arc(W - 24 - tw - 12, y - 4, 4.5, 0, TAU); ctx.fill();
+      y += 20;
+    }
+  }
+}
+
+/* ------------------------------------------------------------ sparkline */
+const spark = $("spark");
+const sctx = spark.getContext("2d");
+
+function drawSpark() {
+  const w = spark.clientWidth, h = spark.clientHeight;
+  if (!w || !h) return;
+  if (spark.width !== Math.round(w * dpr) || spark.height !== Math.round(h * dpr)) {
+    spark.width = Math.round(w * dpr); spark.height = Math.round(h * dpr);
+  }
+  sctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  sctx.clearRect(0, 0, w, h);
+  const top = 6, bottom = h - 14;
+  const path = new Path2D();
+  path.moveTo(0, bottom);
+  for (let i = 0; i <= N; i++) {
+    path.lineTo((i / Math.max(N, 1)) * w, bottom - (growth[i] / growthMax) * (bottom - top));
+  }
+  path.lineTo(w, bottom); path.closePath();
+  sctx.fillStyle = "rgba(170,200,225,0.14)";
+  sctx.fill(path);
+  sctx.save();
+  sctx.beginPath(); sctx.rect(0, 0, (idx / Math.max(N, 1)) * w, h); sctx.clip();
+  sctx.fillStyle = "rgba(243,235,221,0.42)";
+  sctx.fill(path);
+  sctx.restore();
+  sctx.font = `10px ${FONT}`; sctx.textAlign = "left"; sctx.fillStyle = "#8a9bab";
+  for (const t of yearTicks) {
+    const x = (t.i / Math.max(N, 1)) * w;
+    sctx.fillRect(x, bottom, 1, 4);
+    sctx.fillText(t.label, Math.min(x + 3, w - 26), h - 2);
+  }
+  lastSpark = idx;
+}
+
+/* --------------------------------------------------------------- controls */
+const ICON = {
+  play: '<svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>',
+  pause: '<svg viewBox="0 0 24 24"><path d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg>',
+  prev: '<svg viewBox="0 0 24 24"><path d="M6 6h2v12H6zM9.5 12L18 6v12z"/></svg>',
+  next: '<svg viewBox="0 0 24 24"><path d="M16 6h2v12h-2zM6 18V6l8.5 6z"/></svg>',
+  full: '<svg viewBox="0 0 24 24"><path d="M5 5h5v2H7v3H5zM14 5h5v5h-2V7h-3zM5 14h2v3h3v2H5zM17 14h2v5h-5v-2h3z"/></svg>',
+};
+$("prev").innerHTML = ICON.prev;
+$("next").innerHTML = ICON.next;
+$("btn-full").innerHTML = ICON.full;
+$("credit-link").href = CFG.projectUrl;
+
+const seekEl = $("seek");
+seekEl.max = String(N);
+
+function setPlaying(v) {
+  playing = v;
+  const b = $("play");
+  b.innerHTML = v ? ICON.pause : ICON.play;
+  b.setAttribute("aria-label", v ? "Pause" : "Play");
+}
+function togglePlay() {
+  if (!playing && idx >= N) { seek(0); }
+  setPlaying(!playing);
+}
+function step(delta) {
+  setPlaying(false);
+  if (delta > 0 && idx < N) applyCommit(idx++, false);
+  else if (delta < 0) pendingSeek = Math.max(0, idx - 1);
+}
+function setSpeed(v) {
+  speedMul = v;
+  const sel = $("speed");
+  sel.value = String(v);
+}
+function bumpSpeed(dir) {
+  const opts = [...$("speed").options].map((o) => +o.value);
+  const i = clamp(opts.indexOf(speedMul) + dir, 0, opts.length - 1);
+  setSpeed(opts[i]);
+}
+function setToggle(id, on) {
+  dirty = true; $(id).setAttribute("aria-pressed", String(on)); }
+function toggleLabels() { showLabels = !showLabels; setToggle("btn-labels", showLabels); }
+function toggleFollow() {
+  cam.auto = !cam.auto; setToggle("btn-cam", cam.auto);
+  if (cam.auto) fitCamera(false);
+}
+function togglePanel() {
+  panelOpen = !panelOpen; setToggle("btn-panel", panelOpen);
+  $("panel").hidden = !panelOpen; lastPanel = -1e9;
+}
+function toggleFullscreen() {
+  if (document.fullscreenElement) document.exitFullscreen();
+  else if (document.documentElement.requestFullscreen) document.documentElement.requestFullscreen();
+}
+
+let toastTimer = 0;
+function toast(msg, ms) {
+  const t = $("toast");
+  t.textContent = msg; t.classList.add("show");
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => t.classList.remove("show"), ms || 2400);
+}
+
+$("play").addEventListener("click", togglePlay);
+$("prev").addEventListener("click", () => step(-1));
+$("next").addEventListener("click", () => step(1));
+$("speed").addEventListener("change", (e) => setSpeed(+e.target.value));
+$("btn-labels").addEventListener("click", toggleLabels);
+$("btn-cam").addEventListener("click", toggleFollow);
+$("btn-panel").addEventListener("click", togglePanel);
+$("btn-rec").addEventListener("click", toggleRecording);
+$("btn-full").addEventListener("click", toggleFullscreen);
+seekEl.addEventListener("input", () => { pendingSeek = +seekEl.value; });
+
+document.addEventListener("keydown", (e) => {
+  if (e.ctrlKey || e.metaKey || e.altKey) return;
+  const tag = e.target.tagName;
+  const onControl = tag === "BUTTON" || tag === "SELECT";
+  const k = e.key;
+  if (k === "Escape" && recording) { stopRecording(); return; }
+  if (k === " " && !onControl) { e.preventDefault(); togglePlay(); }
+  else if (k === "ArrowRight" && tag !== "INPUT") step(1);
+  else if (k === "ArrowLeft" && tag !== "INPUT") step(-1);
+  else if (k === "+" || k === "=") bumpSpeed(1);
+  else if (k === "-" || k === "_") bumpSpeed(-1);
+  else if (k === "Home") pendingSeek = 0;
+  else if (k === "End") pendingSeek = N;
+  else if (k === "l" || k === "L") toggleLabels();
+  else if (k === "c" || k === "C") toggleFollow();
+  else if (k === "s" || k === "S") togglePanel();
+  else if (k === "r" || k === "R") toggleRecording();
+  else if (k === "f" || k === "F") toggleFullscreen();
+});
+
+/* pan, zoom, hover */
+const pointers = new Map();
+let pinch = 0;
+const tip = $("tip");
+
+function manualCamera() {
+  dirty = true;
+  if (cam.auto) { cam.auto = false; setToggle("btn-cam", false); }
+}
+function zoomAt(sx, sy, factor) {
+  dirty = true;
+  manualCamera();
+  const [wx, wy] = toWorld(sx, sy);
+  cam.z = cam.tz = clamp(cam.z * factor, 0.02, 8);
+  const r = region();
+  cam.x = cam.tx = wx - (sx - (r.l + r.r) / 2) / cam.z;
+  cam.y = cam.ty = wy - (sy - (r.t + r.b) / 2) / cam.z;
+}
+canvas.addEventListener("wheel", (e) => {
+  e.preventDefault();
+  zoomAt(e.clientX, e.clientY, Math.exp(-e.deltaY * (e.ctrlKey ? 0.01 : 0.0015)));
+}, { passive: false });
+
+canvas.addEventListener("pointerdown", (e) => {
+  canvas.setPointerCapture(e.pointerId);
+  pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
+  canvas.classList.add("dragging");
+  tip.hidden = true;
+  if (pointers.size === 2) {
+    const [a, b] = [...pointers.values()];
+    pinch = Math.hypot(a.x - b.x, a.y - b.y);
+  }
+});
+canvas.addEventListener("pointermove", (e) => {
+  const p = pointers.get(e.pointerId);
+  if (!p) { hover(e.clientX, e.clientY); return; }
+  const dx = e.clientX - p.x, dy = e.clientY - p.y;
+  p.x = e.clientX; p.y = e.clientY;
+  if (pointers.size === 1) {
+    manualCamera();
+    cam.x = cam.tx = cam.x - dx / cam.z;
+    cam.y = cam.ty = cam.y - dy / cam.z;
+  } else if (pointers.size === 2) {
+    const [a, b] = [...pointers.values()];
+    const d = Math.hypot(a.x - b.x, a.y - b.y);
+    if (pinch > 0) zoomAt((a.x + b.x) / 2, (a.y + b.y) / 2, d / pinch);
+    pinch = d;
+  }
+});
+const endPointer = (e) => {
+  pointers.delete(e.pointerId);
+  pinch = 0;
+  if (!pointers.size) canvas.classList.remove("dragging");
+};
+canvas.addEventListener("pointerup", endPointer);
+canvas.addEventListener("pointercancel", endPointer);
+canvas.addEventListener("pointerleave", () => { tip.hidden = true; });
+
+function hover(mx, my) {
+  let best = null, bestD = 100;
+  for (const f of files) {
+    if (!f.alive) continue;
+    const [sx, sy] = toScreen(f.x, f.y);
+    const d = (sx - mx) * (sx - mx) + (sy - my) * (sy - my);
+    if (d < bestD) { bestD = d; best = f; }
+  }
+  if (!best) { tip.hidden = true; return; }
+  tip.textContent = `${best.path} (${LANGS[best.lang][0]})`;
+  tip.hidden = false;
+  tip.style.left = Math.min(mx + 14, W - 240) + "px";
+  tip.style.top = my + 16 + "px";
+}
+
+/* -------------------------------------------------------------- recording */
+function toggleRecording() { recording ? stopRecording() : startRecording(); }
+
+function startRecording() {
+  if (!canvas.captureStream || typeof MediaRecorder === "undefined") {
+    toast("Recording is not supported in this browser. Try Chrome, Edge or Firefox.", 4000);
+    return;
+  }
+  const mime = ["video/webm;codecs=vp9", "video/webm;codecs=vp8", "video/webm"].find((t) => MediaRecorder.isTypeSupported(t));
+  if (!mime) { toast("This browser cannot record WebM video.", 4000); return; }
+  dprCap = 1; resize();
+  seek(0);
+  const stream = canvas.captureStream(30);
+  const rec = new MediaRecorder(stream, { mimeType: mime, videoBitsPerSecond: 6000000 });
+  const chunks = [];
+  rec.ondataavailable = (e) => { if (e.data && e.data.size) chunks.push(e.data); };
+  rec.onstop = () => {
+    const blob = new Blob(chunks, { type: "video/webm" });
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = `${D.repo}-replay.webm`;
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(a.href), 5000);
+    toast(`Saved ${a.download}`, 4000);
+  };
+  recording = { rec, mime };
+  document.body.classList.add("recording");
+  $("btn-rec").classList.add("recording");
+  setPlaying(true);
+  rec.start(250);
+  toast("Recording. Press Esc to stop early.", 3500);
+}
+
+function stopRecording() {
+  if (!recording) return;
+  const { rec } = recording;
+  recording = null;
+  if (rec.state !== "inactive") rec.stop();
+  document.body.classList.remove("recording");
+  $("btn-rec").classList.remove("recording");
+  dprCap = 2; resize();
+  setPlaying(false);
+}
+
+/* -------------------------------------------------------------- side panel */
+function updatePanel() {
+  $("s-commits").textContent = fmtInt.format(commitsDone);
+  $("s-files").textContent = fmtInt.format(aliveCount);
+  const linesRow = $("s-lines").parentElement;
+  linesRow.hidden = !D.hasLines;
+  $("s-lines-label").textContent = "Lines";
+  $("s-lines").textContent = `+${fmtCompact.format(linesAdded)} / -${fmtCompact.format(linesDeleted)}`;
+
+  const fill = (el, rows) => {
+    el.replaceChildren(...rows.map(([color, name, count]) => {
+      const li = document.createElement("li");
+      const dot = document.createElement("i"); dot.style.background = color;
+      const nm = document.createElement("span"); nm.textContent = name; nm.title = name;
+      const ct = document.createElement("b"); ct.textContent = fmtInt.format(count);
+      li.append(dot, nm, ct);
+      return li;
+    }));
+  };
+  fill($("s-authors"), authors.filter((a) => a.commits > 0).sort((a, b) => b.commits - a.commits).slice(0, 8)
+    .map((a) => [a.color, a.name, a.commits]));
+  fill($("s-langs"), LANGS.map((l, i) => [l[1], l[0], langCount[i]]).filter((r) => r[2] > 0)
+    .sort((a, b) => b[2] - a[2]).slice(0, 8));
+}
+
+/* -------------------------------------------------------------- main loop */
+function resize() {
+  dirty = true;
+  dpr = Math.min(window.devicePixelRatio || 1, dprCap);
+  W = window.innerWidth; H = window.innerHeight;
+  canvas.width = Math.round(W * dpr); canvas.height = Math.round(H * dpr);
+  lastSpark = -1;
+}
+window.addEventListener("resize", () => { resize(); if (cam.auto) fitCamera(true); });
+
+let lastT = performance.now();
+let manual = false; // set by #manual so tools can step time deterministically (used for README media)
+
+function tick(dt) {
+  clock += dt;
+  if (pendingSeek !== null) { seek(pendingSeek); pendingSeek = null; }
+  if (playing) {
+    acc += dt * rate * speedMul;
+    let guard = 0;
+    while (acc >= 1 && idx < N && guard++ < 200) { applyCommit(idx++, false); acc -= 1; }
+    if (idx >= N) {
+      if (!endedAt) endedAt = clock;
+      if (!recording) { setPlaying(false); endedAt = 0; }
+      else if (clock - endedAt > 2.4) { endedAt = 0; stopRecording(); }
+    }
+  }
+  update(dt);
+  const moving = cam.auto && (Math.abs(cam.tx - cam.x) * cam.z > 0.25 || Math.abs(cam.ty - cam.y) * cam.z > 0.25
+    || Math.abs(Math.log(cam.tz / cam.z)) > 0.002);
+  const animating = playing || recording || hot.size || beams.length || fx.length || moving
+    || authors.some((a) => a.seen && (a.a > 0.03 || clock - a.last < 3.4));
+  if (dirty || animating) { draw(); dirty = false; }
+
+  if (seekEl.value !== String(idx)) seekEl.value = String(idx);
+  if (idx !== lastSpark) drawSpark();
+  if (panelOpen && clock - lastPanel > 0.25) { updatePanel(); lastPanel = clock; }
+}
+
+function frame(t) {
+  const dt = Math.min(0.05, (t - lastT) / 1000);
+  lastT = t;
+  if (!manual) tick(dt);
+  requestAnimationFrame(frame);
+}
+
+/* ------------------------------------------------------------------ start */
+resize();
+setPlaying(false);
+if (!N) {
+  $("empty").hidden = false;
+} else {
+  const hash = new URLSearchParams(location.hash.slice(1));
+  const startAt = parseFloat(hash.get("t"));
+  const reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  manual = hash.has("manual");
+  if (hash.has("panel")) togglePanel();
+  if (hash.get("labels") === "0") toggleLabels();
+  if (isFinite(startAt)) {
+    seek(clamp(startAt, 0, 1) * N);
+  } else if (!reduced) {
+    setTimeout(() => setPlaying(true), 500);
+  }
+}
+window.__replay = { N, get idx() { return idx; }, files, dirs, authors, cam, seek: (n) => { pendingSeek = n; }, play: () => setPlaying(true), advance: (dt) => { dirty = true; tick(dt); } };
+requestAnimationFrame(frame);
+})();
+</script>
+</body>
+</html>
