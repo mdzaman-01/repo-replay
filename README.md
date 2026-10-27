@@ -1,7 +1,7 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="docs/logo-dark.png">
-    <img src="docs/logo.png" alt="repo replay" width="260">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/mdzaman-01/repo-replay/main/docs/logo-dark.png">
+    <img src="https://raw.githubusercontent.com/mdzaman-01/repo-replay/main/docs/logo.png" alt="repo replay" width="260">
   </picture>
 </p>
 
@@ -9,7 +9,7 @@
 
 Watch your repository grow. One command turns any git history into an interactive animation: folders branch out, files appear and glow when they change, and contributors fly in to edit them.
 
-![repo-replay animation of a project growing over two years](docs/demo.gif)
+![repo-replay animation of a project growing over two years](https://raw.githubusercontent.com/mdzaman-01/repo-replay/main/docs/demo.gif)
 
 **[Try the live demo](https://mdzaman-01.github.io/repo-replay/demo.html)**
 
@@ -84,7 +84,7 @@ python scripts/make_demo_repo.py /tmp/demo-project
 python -m repo_replay /tmp/demo-project --open
 ```
 
-See [CONTRIBUTING.md](CONTRIBUTING.md). Ideas that would make good first issues: a light theme, GIF export, more language colors, a `--follow-author` mode.
+See [CONTRIBUTING.md](https://github.com/mdzaman-01/repo-replay/blob/main/CONTRIBUTING.md). Ideas that would make good first issues: a light theme, GIF export, more language colors, a `--follow-author` mode.
 
 ## License
 

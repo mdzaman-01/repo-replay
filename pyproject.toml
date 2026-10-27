@@ -19,6 +19,11 @@ classifiers = [
 ]
 dependencies = []
 
+[project.urls]
+Homepage = "https://github.com/mdzaman-01/repo-replay"
+Demo = "https://mdzaman-01.github.io/repo-replay/demo.html"
+Issues = "https://github.com/mdzaman-01/repo-replay/issues"
+
 [project.scripts]
 repo-replay = "repo_replay.cli:main"
 
